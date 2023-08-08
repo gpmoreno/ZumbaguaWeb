@@ -6,12 +6,11 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="shortcut icon" href="images/favicon.ico">
-<title>Prototipo Página Web</title>
+<title>Prototipo</title>
+<!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Yellowtail%7COpen%20Sans%3A400%2C300%2C600%2C700%2C800" media="screen" />
-<!-- Estilos para página web -->
+<!-- Custom styles for this template -->
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="screen" />
@@ -22,6 +21,7 @@
 <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
 <link href="css/animate.min.css" rel="stylesheet">
 <link href="css/ts.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
@@ -30,107 +30,485 @@
 <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
 
-<!-- Estilos para carrusel de imagenes y efectos de cabecera-->  
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+            (Load Extensions only on Local File Systems !  
+            The following part can be removed on Server for On Demand Loading) -->  
+<script type="text/javascript" src="js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.video.min.js"></script>
 
 </head>
+
 <body>
-<!--Inicio de cabecera-->
+<!--Header Start-->
 <header  data-spy="affix" data-offset-top="1" class="clearfix">
-    
+    <section class="toolbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 left_bar">
+                </div>
+                <div class="col-lg-6 ">
+                    <ul class="right-none pull-right company_info">
+                        <li><a href="tel:18005670123"><i class="fa fa-phone-square"></i> 1-800-567-0123</a></li>
+                        <li class="address"><a href="contact.html"><span class="fa fa-map-marker"></span</a> San Felipe-Latacunga</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar_shadow"></div>
+    </section>
     <div class="bottom-header" >
         <div class="container">
             <nav class="navbar navbar-default" role="navigation">
                 <div class="container-fluid"> 
-                    <!-- Identificatipo de sitio web y botón para resposividad móvil -->
+                    <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                        <a class="navbar-brand" href="index.html"><span class="logo"><span class="primary_text">Prototipo</span> <span class="secondary_text">Sitio web</span></span></a> </div>
+                        <img src="images/logo1.png" alt="" width="200" height="350"></div>
                     
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav pull-right">
                             <li class="active"><a href="index.html">Inicio</a></li>
-                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Páginas <b class="caret"></b></a>
+                            <li><a href="index.html">Zumbahua Matriz</a></li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Paraisos Escondidos <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Antecedentes históricos <b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li class="active"><a href="index.html">Fundación</a></li>
-                                            <li><a href="index.html"">Historia</a></li>
-                                            <li><a href="index.html"">Personajes celebres</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="index.html"">Atráctivos turisticos</a></li>
-                                    <li><a href="index.html"">Administración</a></li>
-                                    <li><a href="index.html"">Contactos</a></li>
+                                    <li><a href="demo.html">Laguna de Quilotoa</a></li>
+                                    <li><a href="demo.html">Cañón del Río Toachi</a></li>
+                                    <li><a href="inventory-listing.html">Shalala</a></li>
+                                    <li><a href="inventory-listing.html">Escalada Cocha Uma</a></li>
+                                    <li><a href="inventory-listing.html">La Cueva del Condor</a></li>
                                 </ul>
                             </li>
-                            <li><a href="index.html.html">Noticias</a></li>
+                            <li><a href="service.html">Alojamiento</a></li>
+                            <li><a href="contact.html">Contactos</a></li>
                         </ul>
                     </div>
+                    <!-- /.navbar-collapse --> 
                 </div>
+                <!-- /.container-fluid --> 
             </nav>
         </div>
         <div class="header_shadow"></div>
     </div>
 </header>
-<!--Fin cabecera-->
-<!--Cuerpo-->
-<section class="content" style="margin-top: 16px;">
+<!--Header End-->
+
+<div class="clearfix"></div>
+<section class="banner-wrap">
+    <div class="banner">
+        
+        <div class="rev_slider_wrapper">            
+            <!-- START REVOLUTION SLIDER 5.0 auto mode -->
+            <div id="rev_slider" class="rev_slider"  data-version="5.0">
+                <ul>    
+                    <!-- SLIDE  -->
+                    <li data-transition="fade">
+                        
+                        <!-- MAIN IMAGE -->
+                        <img src="images/quilotoa1.jpg" alt="">                           
+
+                        <!-- LAYERS -->
+                        <div class="tp-caption mediumlarge_light_white_center domainate start"
+                        data-x="0"
+                        data-hoffset="0"
+                        data-y="214"
+                        
+                        data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;" 
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+
+                        data-speed="1000"
+                        data-endspeed="300">LAGUNA </div>
+                        
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption internet"
+                        data-x="0"
+                        data-y="282"
+                        data-speed="500"
+                        data-start="800"
+
+                        
+                        data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;" 
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+
+                        style="z-index: 6; letter-spacing: -3px;">QUILOTOA </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption attract "
+                        data-x="0"
+                        data-y="369"
+                        data-speed="500"
+                        data-start="1700"                        
+                        data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        style="z-index: 6; ">Belleza, Energía, &amp; Pasión </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption more "
+                        data-x="100"
+                        data-y="425"
+                        data-speed="800"
+                        data-start="1900"
+                        data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;" 
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-splitin="none" 
+                        data-splitout="none"
+                        style="z-index: 6; ">más </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption qualified"
+                        data-x="0"
+                        data-y="476"
+                        data-speed="800"
+                        data-start="2600"
+                        data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" 
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        style="z-index: 6">experiencia inolvidable </div>
+
+                        
+                    </li>
+                    
+                    <!-- SLIDE  -->
+                    <li data-transition="fade">
+                        
+                        <!-- MAIN IMAGE -->
+                        <img src="images/suma.jpg"  alt="">                           
+
+                        <!-- LAYERS -->
+                        <div class="tp-caption mediumlarge_light_white_center invest"
+                        data-x="543"
+                        data-y="160"
+                        data-speed="500"
+                        data-start="300"
+                        
+                        data-transform_in="x:right;s:2000;e:Power4.easeInOut;" 
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                        data-splitin="none" 
+                        data-splitout="none" >Tiempo de maravillarse </div>
+                        
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption move mediumlarge_light_white_center"
+                        data-x="480"
+                        data-y="230"
+                        data-speed="500"
+                        data-start="800"
+                        data-transform_in="x:right;s:2000;e:Power4.easeInOut;" 
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        style="z-index: 6; letter-spacing: -3px;">PAISAJES </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption light_brown mediumlarge_light_white_center sfl"
+                        data-x="675"
+                        data-y="230"
+                        data-speed="500"
+                        data-start="1200"
+                        data-transform_in="x:right;s:2000;e:Power4.easeInOut;" 
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        style="z-index: 6;">CAUTIVADORES </div>
+
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption brown_line"
+                        data-x="458"
+                        data-y="273"
+                        data-speed="800"
+                        data-start="2600"
+                        data-transform_in="x:right;s:2000;e:Power4.easeInOut;" 
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        style="z-index: 6"><img src="images/brown_line.jpg" alt="underline"> </div>                    
+                    </li>
+
+                    <!-- SLIDE  -->
+                    <li data-transition="fade">
+                        
+                        <!-- MAIN IMAGE -->
+                        <img src="images/rio.jpg" alt="">                           
+
+                        <!-- LAYERS -->
+                        <div class="tp-caption customin customout start green"
+                        data-x="40"
+                        data-hoffset="0"
+                        data-y="510"
+                    
+                        data-transform_in="y:top;s:2000;e:Power4.easeInOut;" 
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                        data-speed="1000"
+                        data-start="500"
+                        data-endspeed="300">¿Conoce este paraíso</div>
+                        
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption big_white fade"
+                        data-x="40"
+                        data-y="560"
+                        data-speed="500"
+                        data-start="800"
+                        data-transform_in="y:bottom;s:2000;e:Power4.easeInOut;" 
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                        style="z-index: 6;">Majestuoso? </div>                    
+                    </li>
+
+                    <!-- SLIDE  -->
+                    <li data-transition="fade">
+                        <!-- MAIN IMAGE --> 
+                        <img src="images/shalala.jpg" alt=""> 
+                        
+                        <!-- LAYERS -->
+                        <div class="tp-caption customin customout start big_white"
+                        data-x="0"
+                        data-hoffset="0"
+                        data-y="235"
+
+                        data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;" 
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-speed="1000"
+                        data-start="500"
+                        data-easing="Back.easeInOut"
+                        data-endspeed="300">Hermosura natural</div>
+                        
+                        
+                        
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption cursive skewfromright"
+                        data-x="400"
+                        data-y="570"
+                        data-speed="500"
+                        data-start="800"
+                        data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" 
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        style="z-index: 6;">Shalala</div>
+                    </li>
+
+                    <!-- SLIDE  -->
+                    <li data-transition="fade"> 
+                        <!-- MAIN IMAGE --> 
+                        <img src="images/tigua.jpg" alt=""> 
+                        
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption thin_dark_blue fade"
+                        data-x="50"
+                        data-y="210"
+                        data-speed="500"
+                        data-start="800"
+                        data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;" 
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        style="z-index: 6; letter-spacing: 0;">PINTURAS</div>
+                        
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption thin_dark_blue fade"
+                        data-x="05"
+                        data-y="270"
+                        data-speed="500"
+                        data-start="1200"
+                        data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;" 
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        style="z-index: 6; ">ARTESANALES</div>
+                    </li>
+                </ul>               
+            </div><!-- END REVOLUTION SLIDER -->
+        </div><!-- END REVOLUTION SLIDER WRAPPER -->    
+
+        <script>
+        /******************************************
+        -   CONTROL DE TIEMPO EN TRANSICION DE IMAGENES DE CARRUSEL -
+        ******************************************/
+        var revapi;
+        jQuery(document).ready(function() {     
+            revapi = jQuery("#rev_slider").revolution({
+                sliderType:"standard",
+                sliderLayout:"fullwidth",
+                delay:7000,
+                navigation: {
+                    arrows:{enable:true}                
+                },          
+                gridwidth:1170,
+                gridheight:645      
+            });     
+        }); /*listo*/
+        </script>       
+        
+        <!-- FIN CARRUSEL --> 
+        
+        <!-- FIN CONTENEDOR --> 
+        
+    </div>
+</section>
+<!--message-wrap ends-->
+<section class="content">
     <div class="container">
         <div class="inner-page homepage margin-bottom-none">
-            <div class="row parallax_parent design_2 margin-bottom-0 margin-top-30">
-                <div class="parallax_scroll clearfix" data-velocity="-.5" data-offset="-200" data-image="images/parallax1.jpg">
-                    <div class="overlay">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-left-none xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft"> <span class="align-center"><i class="fa fa-6x fa-bar-chart-o"></i></span>
-                                    <h3>Quilotoa</h3>
-                                    <p>El Quilotoa es un volcán lleno de agua en su cráter de 3 kilómetros (2 mi) de diámetro en su borde que se formó por el colapso de este volcán. 
-                                        Anteriormente al colapso se produjeron otras ocho grandes erupciones en el Quilotoa</p>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft" data-wow-delay=".2s"> <span class="align-center"><i class="fa fa-6x fa-road"></i></span>
-                                    <h3>Shalalala</h3>
-                                    <p>Descripcion del lugar.</p>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInRight" data-wow-delay=".2s"> <span class="align-center"><i class="fa fa-6x fa-flag-checkered"></i></span>
-                                    <h3>Zumbahua</h3>
-                                    <p>Zumbahua es un pueblo asentado en los Andes ecuatorianos.</p>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 padding-right-none scroll_effect bounceInRight"> <span class="align-center"><i class="fa fa-6x fa-dashboard"></i></span>
-                                    <h3>Agricultura</h3>
-                                    <p>Descripcion del lugar.</p>
+            <section class="welcome-wrap padding-top-0 sm-horizontal-15">
+                <div class="row">
+                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 welcome padding-left-none padding-bottom-20 scroll_effect fadeInUp">
+                        <h4 class="margin-bottom-25 margin-top-none"><strong>BIENVENIDO</strong> A NUESTRO SITIO WEB</h4>
+                        <p>Lorem ipsum dolor sit amet, falli tollit cetero te eos. Ea ullum liber aperiri mi, impetus
+                            ate philosophia ad duo, quem regione ne ius. Vis quis lobortis dissentias ex, in du aft 
+                            philosophia, malis necessitatibus no mei. Volumus sensibus qui ex, eum duis doming 
+                            ad. Modo liberavisse eu mel, no viris prompta sit. Pro labore sadipscing et. Ne peax
+                            egat usu te mel <span class="alternate-font">vivendo scriptorem</span>. Pro labore sadipscing et. Ne pertinax egat usu te 
+                            mel vivendo scriptorem.</p>
+                        <p>Cum ut tractatos imperdiet, no tamquam facilisi qui. Eum tibique consectetuer in, an 
+                            referrentur vis, vocent deseruisse ex mel. Sed te <span class="alternate-font">idque graecis</span>. Vel ne libris dolores, 
+                            mel graece mel vivendo scriptorem dolorum.</p>
+                    </div>
+                    <!--welcome ends-->
+                </div>
+            </section>
+            <!--welcome-wrap ends-->
+            <section class="car-block-wrap padding-bottom-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
+                            <div class="flip margin-bottom-30">
+                                <div class="card">
+                                    <div class="face front"><img class="img-responsive" src="images/car1.jpg" alt=""></div>
+                                    <div class="face back">
+                                        <div class='hover_title'>Race Ready</div>
+                                        <a href="inventory-listing.html"><i class="fa fa-link button_icon"></i></a> <a href="images/car1-lrg.jpg" class="fancybox"><i class="fa fa-arrows-alt button_icon"></i></a> </div>
                                 </div>
                             </div>
+                            <h4><a href="#">FACTORY READY FOR TRACK DAY</a></h4>
+                            <p class="margin-bottom-none">Sea veniam lucilius neglegentur ad, an per sumo volum
+                                voluptatibus. Qui cu everti repudiare. Eam ut cibo nobis 
+                                aperiam, elit qualisque at cum. Possit antiopam id est. 
+                                Illud delicata ea mel, sed novum mucius id. Nullam qua.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
+                            <div class="flip horizontal margin-bottom-30">
+                                <div class="card">
+                                    <div class="face front"><img class="img-responsive" src="images/car2.jpg" alt=""></div>
+                                    <div class="face back">
+                                        <div class='hover_title'>Family Oriented</div>
+                                        <a href="inventory-listing.html"><i class="fa fa-link button_icon"></i></a> <a href="images/car2-lrg.jpg" class="fancybox"><i class="fa fa-arrows-alt button_icon"></i></a> </div>
+                                </div>
+                            </div>
+                            <h4><a href="#">A SPORT UTILITY FOR THE FAMILY</a></h4>
+                            <p class="margin-bottom-none">Cum ut tractatos imperdiet, no tamquam facilisi qui. 
+                                Eum tibique consectetuer in, an legimus referrentur vis, 
+                                vocent deseruisse ex mel. Sed te idque graecis. Vel ne 
+                                libris dolores, in mel graece dolorum.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
+                            <div class="flip margin-bottom-30">
+                                <div class="card">
+                                    <div class="face front"><img class="img-responsive" src="images/car3.jpg" alt=""></div>
+                                    <div class="face back">
+                                        <div class='hover_title'>World Class</div>
+                                        <a href="inventory-listing.html"><i class="fa fa-link button_icon"></i></a> <a href="images/car3-lrg.jpg" class="fancybox"><i class="fa fa-arrows-alt button_icon"></i></a> </div>
+                                </div>
+                            </div>
+                            <h4><a href="#">MAKE AN EXECUTIVE STATEMENT</a></h4>
+                            <p class="margin-bottom-none">Te inermis cotidieque cum, sed ea utroque atomorum 
+                                sadipscing. Qui id oratio everti scaevola, vim ea augue 
+                                ponderum vituperatoribus, quo adhuc abhorreant 
+                                omittantur ad. No his fierent perpetua consequat, et nis.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </section>
         </div>
     </div>
 </section>
 
+<!--Footer Start-->
+<footer class="design_2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-left-none md-padding-left-none sm-padding-left-15 xs-padding-left-15">
+                <h4>newsletter</h4>
+                <p>By subscribing to our company newsletter
+                    you will always be up-to-date on our latest
+                    promotions, deals and vehicle inventory!</p>
+                <form method="post" action="#" class="form_contact">
+                    <input type="text" value="" name="MERGE0" placeholder="Email Address">
+                    <input type="submit" value="Subscribe" class="md-button">
+                    <input type="hidden" name="u" value="">
+                    <input type="hidden" name="id" value="">
+                </form>
+                </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <h4>Latest tweets</h4>
+                <div class="latest-tweet">
+                    <div><i class="fa fa-twitter"></i>
+                        <p>Put your tweet message here.  Make it 
+                            compelling to attract other <a href="#">@people</a> to 
+                            read and click on your <a href="#">http://links</a> to 
+                            your site. <a href="#">#hashtag</a></p>
+                    </div>
+                    <div><i class="fa fa-twitter"></i>
+                        <p>Put your tweet message here.  Make it 
+                            compelling to attract other <a href="#">@people</a> to 
+                            read and click on your <a href="#">http://links</a> to 
+                            your site. <a href="#">#hashtag</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-right-none md-padding-right-none sm-padding-right-15 xs-padding-right-15">
+                <h4>Contact us</h4>
+                <div class="footer-contact">
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, AB 12345</li>
+                        <li><i class="fa fa-phone"></i> <strong>Phone:</strong>1-800-123-4567</li>
+                        <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong><a href="#">sales@company.com</a></li>
+                    </ul>
+
+                    <i class="fa fa-location-arrow back_icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="clearfix"></div>
 <section class="copyright-wrap padding-bottom-10">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="logo-footer margin-bottom-20 md-margin-bottom-20 sm-margin-bottom-10 xs-margin-bottom-20"><a href="#">
-                    <h1>Prototipo</h1>
-                    <span>SITIO WEB</span></a>
+                    <h1>Automotive</h1>
+                    <span>template</span></a>
                 </div>
-                <p>Copyright &copy; 2023 Stalyn Guanoluisa. Derechos reservados.</p>
+                <p>Copyright &copy; 2018 Theme Suite.  All rights reserved.</p>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                 <ul class="social margin-bottom-25 md-margin-bottom-25 sm-margin-bottom-20 xs-margin-bottom-20 xs-padding-top-10 clearfix">
                     <li><a class="sc-1" href="#"></a></li>
                     <li><a class="sc-2" href="#"></a></li>
-                    
+                    <li><a class="sc-3" href="#"></a></li>
+                    <li><a class="sc-4" href="#"></a></li>
+                    <li><a class="sc-5" href="#"></a></li>
+                    <li><a class="sc-6" href="#"></a></li>
+                    <li><a class="sc-7" href="#"></a></li>
+                    <li><a class="sc-8" href="#"></a></li>
+                    <li><a class="sc-9" href="#"></a></li>
+                    <li><a class="sc-10" href="#"></a></li>
+                    <li><a class="sc-11" href="#"></a></li>
+                    <li><a class="sc-12" href="#"></a></li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
-
+<div class="back_to_top"> <img src="images/arrow-up.png" alt="scroll up" /> </div>
 <!-- Bootstrap core JavaScript --> 
 <script src="js/retina.js"></script> 
 <script type="text/javascript" src="js/jquery.parallax.js"></script> 
