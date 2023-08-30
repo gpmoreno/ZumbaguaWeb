@@ -146,14 +146,14 @@ transition: all .3s ease;
 	cursor: default;
 }
 .flex-direction-nav a:before {
-	font-family: "flexslider-icon";
+	font-family: "<";
 	font-size: 28px;
 	line-height:40px;
 	display: inline-block;
-	content: '\f001';
+	content: '<';
 }
 .flex-direction-nav a.flex-next:before {
-	content: '\f002';
+	content: '>';
 }
 /* Pause/Play */
 .flex-pauseplay a {
