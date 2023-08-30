@@ -5,13 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="shortcut icon" href="images/favicon.ico">
-<title>Prototipo Página Web</title>
+<link rel="shortcut icon" href="images/logo1.png">
+<title>Prototipo</title>
+<!-- Archivos Bootstrap y CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Yellowtail%7COpen%20Sans%3A400%2C300%2C600%2C700%2C800" media="screen" />
-<!-- Estilos para página web -->
+<!-- Archivos para customizar estilos -->
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="screen" />
@@ -22,6 +21,7 @@
 <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
 <link href="css/animate.min.css" rel="stylesheet">
 <link href="css/ts.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
@@ -30,118 +30,560 @@
 <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
 
-<!-- Estilos para carrusel de imagenes y efectos de cabecera-->  
-
+<!-- Archivos para carrusel -->
+<script type="text/javascript" src="js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="js/extensions/revolution.extension.video.min.js"></script>
+<style>
+    p {
+      text-align: justify;
+    }
+    </style>
 </head>
+
 <body>
 <!--Inicio de cabecera-->
 <header  data-spy="affix" data-offset-top="1" class="clearfix">
-    
+    <section class="toolbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 left_bar">
+                </div>
+                <div class="col-lg-6 ">
+                    <ul class="right-none pull-right company_info">
+                        <li><a href="#"><i class="fa fa-phone-square"></i> 032672-041</a></li>
+                        <li class="address"><a href="#"><span class="fa fa-map-marker"></span</a> Parroquia Zumbahua – Zona Centro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar_shadow"></div>
+    </section>
     <div class="bottom-header" >
         <div class="container">
             <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid"> 
-                    <!-- Identificatipo de sitio web y botón para resposividad móvil -->
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                        <a class="navbar-brand" href="index.html"><span class="logo"><span class="primary_text">Prototipo</span> <span class="secondary_text">Sitio web</span></span></a> </div>
-                    
+                        <img src="images/logo1.png" alt="" width="200" height="350"></div>
+
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav pull-right">
                             <li class="active"><a href="index.html">Inicio</a></li>
-                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Páginas <b class="caret"></b></a>
+                            <li><a href="zumbahua.html">Zumbahua Matriz</a></li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Paraisos Escondidos <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Antecedentes históricos <b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li class="active"><a href="index.html">Fundación</a></li>
-                                            <li><a href="index.html"">Historia</a></li>
-                                            <li><a href="index.html"">Personajes celebres</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="index.html"">Atráctivos turisticos</a></li>
-                                    <li><a href="index.html"">Administración</a></li>
-                                    <li><a href="index.html"">Contactos</a></li>
+                                    <li><a href="#">Laguna de Quilotoa</a></li>
+                                    <li><a href="#">Cañón del Río Toachi</a></li>
+                                    <li><a href="#">Shalala</a></li>
+                                    <li><a href="#">Escalada Cocha Uma</a></li>
+                                    <li><a href="#">La Cueva del Condor</a></li>
                                 </ul>
                             </li>
-                            <li><a href="index.html.html">Noticias</a></li>
+                            <li><a href="#">Alojamiento</a></li>
+                            <li><a href="#">Contactos</a></li>
                         </ul>
                     </div>
+                    <!-- /.navbar-collapse -->
                 </div>
+                <!-- /.container-fluid -->
             </nav>
         </div>
         <div class="header_shadow"></div>
     </div>
 </header>
-<!--Fin cabecera-->
-<!--Cuerpo-->
-<section class="content" style="margin-top: 16px;">
+<!--Header End-->
+
+<div class="clearfix"></div>
+<section class="banner-wrap">
+    <div class="banner">
+
+        <div class="rev_slider_wrapper">
+            <!-- START REVOLUTION SLIDER 5.0 auto mode -->
+            <div id="rev_slider" class="rev_slider"  data-version="5.0">
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-transition="fade">
+
+                        <!-- MAIN IMAGE -->
+                        <img src="images/quilotoa1.jpg" alt="">
+
+                        <!-- LAYERS -->
+                        <div class="tp-caption mediumlarge_light_white_center domainate start"
+                        data-x="0"
+                        data-hoffset="0"
+                        data-y="214"
+
+                        data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                        data-start="1000"
+                        data-splitin="none"
+                        data-splitout="none"
+
+                        data-speed="1000"
+                        data-endspeed="300">LAGUNA </div>
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption internet"
+                        data-x="0"
+                        data-y="282"
+                        data-speed="500"
+                        data-start="800"
+
+
+                        data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                        data-splitin="none"
+                        data-splitout="none"
+
+                        style="z-index: 6; letter-spacing: -3px;">QUILOTOA </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption attract "
+                        data-x="0"
+                        data-y="369"
+                        data-speed="500"
+                        data-start="1700"
+                        data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;"
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                        data-splitin="none"
+                        data-splitout="none"
+                        style="z-index: 6; ">Belleza, Energía, &amp; Pasión </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption more "
+                        data-x="100"
+                        data-y="425"
+                        data-speed="800"
+                        data-start="1900"
+                        data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                        data-splitin="none"
+                        data-splitout="none"
+                        style="z-index: 6; ">más </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption qualified"
+                        data-x="0"
+                        data-y="476"
+                        data-speed="800"
+                        data-start="2600"
+                        data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;"
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                        data-splitin="none"
+                        data-splitout="none"
+                        style="z-index: 6">experiencia inolvidable </div>
+
+
+                    </li>
+
+                    <!-- SLIDE  -->
+                    <li data-transition="fade">
+
+                        <!-- MAIN IMAGE -->
+                        <img src="images/suma.jpg"  alt="">
+
+                        <!-- LAYERS -->
+                        <div class="tp-caption mediumlarge_light_white_center invest"
+                        data-x="543"
+                        data-y="160"
+                        data-speed="500"
+                        data-start="300"
+
+                        data-transform_in="x:right;s:2000;e:Power4.easeInOut;"
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                        data-splitin="none"
+                        data-splitout="none" >Tiempo de maravillarse </div>
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption move mediumlarge_light_white_center"
+                        data-x="480"
+                        data-y="230"
+                        data-speed="500"
+                        data-start="800"
+                        data-transform_in="x:right;s:2000;e:Power4.easeInOut;"
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                        data-splitin="none"
+                        data-splitout="none"
+                        style="z-index: 6; letter-spacing: -3px;">PAISAJES </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption light_brown mediumlarge_light_white_center sfl"
+                        data-x="675"
+                        data-y="230"
+                        data-speed="500"
+                        data-start="1200"
+                        data-transform_in="x:right;s:2000;e:Power4.easeInOut;"
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                        data-splitin="none"
+                        data-splitout="none"
+                        style="z-index: 6;">CAUTIVADORES </div>
+
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption brown_line"
+                        data-x="458"
+                        data-y="273"
+                        data-speed="800"
+                        data-start="2600"
+                        data-transform_in="x:right;s:2000;e:Power4.easeInOut;"
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                        data-splitin="none"
+                        data-splitout="none"
+                        style="z-index: 6"><img src="images/brown_line.jpg" alt="underline"> </div>
+                    </li>
+
+                    <!-- SLIDE  -->
+                    <li data-transition="fade">
+
+                        <!-- MAIN IMAGE -->
+                        <img src="images/rio.jpg" alt="">
+
+                        <!-- LAYERS -->
+                        <div class="tp-caption customin customout start green"
+                        data-x="40"
+                        data-hoffset="0"
+                        data-y="510"
+
+                        data-transform_in="y:top;s:2000;e:Power4.easeInOut;"
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                        data-speed="1000"
+                        data-start="500"
+                        data-endspeed="300">¿Conoce este paraíso</div>
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption big_white fade"
+                        data-x="40"
+                        data-y="560"
+                        data-speed="500"
+                        data-start="800"
+                        data-transform_in="y:bottom;s:2000;e:Power4.easeInOut;"
+                        data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                        style="z-index: 6;">Majestuoso? </div>
+                    </li>
+
+                    <!-- SLIDE  -->
+                    <li data-transition="fade">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/shalala.jpg" alt="">
+
+                        <!-- LAYERS -->
+                        <div class="tp-caption customin customout start big_white"
+                        data-x="0"
+                        data-hoffset="0"
+                        data-y="235"
+
+                        data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                        data-speed="1000"
+                        data-start="500"
+                        data-easing="Back.easeInOut"
+                        data-endspeed="300">Hermosura natural</div>
+
+
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption cursive skewfromright"
+                        data-x="400"
+                        data-y="570"
+                        data-speed="500"
+                        data-start="800"
+                        data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;"
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                        style="z-index: 6;">Shalala</div>
+                    </li>
+
+                    <!-- SLIDE  -->
+                    <li data-transition="fade">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/tigua.jpg" alt="">
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption thin_dark_blue fade"
+                        data-x="50"
+                        data-y="210"
+                        data-speed="500"
+                        data-start="800"
+                        data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                        style="z-index: 6; letter-spacing: 0;">PINTURAS</div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption thin_dark_blue fade"
+                        data-x="05"
+                        data-y="270"
+                        data-speed="500"
+                        data-start="1200"
+                        data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                        data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                        style="z-index: 6; ">ARTESANALES</div>
+                    </li>
+                </ul>
+            </div><!-- END REVOLUTION SLIDER -->
+        </div><!-- END REVOLUTION SLIDER WRAPPER -->
+
+        <script>
+        /******************************************
+        -   CONTROL DE TIEMPO EN TRANSICION DE IMAGENES DE CARRUSEL -
+        ******************************************/
+        var revapi;
+        jQuery(document).ready(function() {
+            revapi = jQuery("#rev_slider").revolution({
+                sliderType:"standard",
+                sliderLayout:"fullwidth",
+                delay:7000,
+                navigation: {
+                    arrows:{enable:true}
+                },
+                gridwidth:1170,
+                gridheight:645
+            });
+        }); /*listo*/
+        </script>
+
+        <!-- FIN CARRUSEL -->
+
+        <!-- FIN CONTENEDOR -->
+
+    </div>
+</section>
+<!--message-wrap ends-->
+<section class="content">
     <div class="container">
         <div class="inner-page homepage margin-bottom-none">
-            <div class="row parallax_parent design_2 margin-bottom-0 margin-top-30">
-                <div class="parallax_scroll clearfix" data-velocity="-.5" data-offset="-200" data-image="images/parallax1.jpg">
-                    <div class="overlay">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-left-none xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft"> <span class="align-center"><i class="fa fa-6x fa-bar-chart-o"></i></span>
-                                    <h3>Quilotoa</h3>
-                                    <p>El Quilotoa es un volcán lleno de agua en su cráter de 3 kilómetros (2 mi) de diámetro en su borde que se formó por el colapso de este volcán. 
-                                        Anteriormente al colapso se produjeron otras ocho grandes erupciones en el Quilotoa</p>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft" data-wow-delay=".2s"> <span class="align-center"><i class="fa fa-6x fa-road"></i></span>
-                                    <h3>Shalalala</h3>
-                                    <p>Descripcion del lugar.</p>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInRight" data-wow-delay=".2s"> <span class="align-center"><i class="fa fa-6x fa-flag-checkered"></i></span>
-                                    <h3>Zumbahua</h3>
-                                    <p>Zumbahua es un pueblo asentado en los Andes ecuatorianos.</p>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 padding-right-none scroll_effect bounceInRight"> <span class="align-center"><i class="fa fa-6x fa-dashboard"></i></span>
-                                    <h3>Agricultura</h3>
-                                    <p>Descripcion del lugar.</p>
+            <section class="welcome-wrap padding-top-0 sm-horizontal-15">
+                <div class="row">
+                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 welcome padding-left-none padding-bottom-20 scroll_effect fadeInUp">
+                        <h4 class="margin-bottom-25 margin-top-none"><strong>¡Bienvenido</strong> a nuestro rincón de maravillas y aventuras!</h4>
+                        <p>Te damos la más cordial bienvenida a nuestro sitio web turístico
+                            dedicado a la hermosa parroquia <span class="alternate-font">Zumbahua </span>, un tesoro escondido en
+                            medio de los majestuosos paisajes de la sierra ecuatoriana. Aquí,
+                             entre montañas imponentes y valles serenos, descubrirás un destino
+                              que te llevará a explorar tradiciones auténticas y panoramas de ensueño.
+                        <p><span class="alternate-font">Zumbahua </span>
+                            es mucho más que un simple lugar; es un encuentro con la historia
+                             y la vida de los pueblos andinos. Nuestra parroquia es famosa por sus
+                             mercados indígenas vibrantes y coloridos, donde los habitantes locales
+                              exhiben su arte, artesanía y productos agrícolas frescos.
+                               Sumérgete en la autenticidad de la cultura local mientras
+                               recorres los puestos llenos de tejidos, cerámicas y otros tesoros únicos.</p>
+                       <p>Pero <span class="alternate-font">Zumbahua </span> también es un regalo para los amantes de la naturaleza.
+                        Los alrededores te brindarán vistas panorámicas que quitarán el aliento,
+                        con lagunas cristalinas y senderos serpenteantes que te conducirán a la
+                        esencia misma de la madre tierra. Desde el misterioso Lago Quilotoa, con
+                         sus aguas turquesas en el cráter de un volcán, hasta los miradores que
+                         te permitirán abrazar el horizonte, cada rincón de Zumbahua tiene algo especial que ofrecer.</p>
+                       <p>Prepárate para experimentar el encanto único de <span class="alternate-font">Zumbahua </span>.
+                        Tu viaje empieza aquí, en nuestro sitio web, y te llevará a
+                        un lugar donde la magia de los Andes se mezcla con la hospitalidad
+                         de su gente. ¡Bienvenidos a un viaje de descubrimiento en <span class="alternate-font">Zumbahua </span>!</p>
+                    </div>
+                    <!--welcome ends-->
+                </div>
+            </section>
+            <!--welcome-wrap ends-->
+            <section class="car-block-wrap padding-bottom-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
+                            <div class="flip margin-bottom-30">
+                                <div class="card">
+                                    <div class="face front"><img class="img-responsive" src="images/quilotoa2.jpg" alt=""></div>
+                                    <div class="face back">
+                                        <div class='hover_title'>Conocer sitio</div>
+                                        <a href=""><i class="fa fa-link button_icon"></i></a> <a href="images/quilotoa3.jpg" class="fancybox"></a> </div>
                                 </div>
                             </div>
+                            <h4><a href="#" style="margin-top: 10px;">LAGUNA QUILOTOA</a></h4>
+                            <p class="margin-bottom-none">
+                                El Quilotoa es un impresionante cráter de volcán ubicado en los Andes ecuatorianos.
+                                Su característica más destacada es su laguna de aguas cristalinas, que varía en
+                                tonalidades de azul y verde. Este lugar de belleza natural sorprendente es un
+                                destino popular para los amantes de la naturaleza y los aventureros.
+                                Los senderistas pueden recorrer el borde del cráter para disfrutar de vistas
+                                panorámicas espectaculares y, para aquellos más intrépidos, descender hasta la orilla de la laguna.
+                                 El Quilotoa es un punto focal cultural y turístico, enriquecido por la cercanía de comunidades
+                                  locales que comparten su rica herencia y artesanía tradicional con los visitantes.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
+                            <div class="flip horizontal margin-bottom-30">
+                                <div class="card">
+                                    <div class="face front"><img class="img-responsive" src="images/suma2.jpg" alt=""></div>
+                                    <div class="face back">
+                                        <div class='hover_title'>Conocer sitio</div>
+                                        <a href="#"><i class="fa fa-link button_icon"></i></a> </div>
+                                </div>
+                            </div>
+                            <h4><a href="#" style="margin-top: 10px;">COCHA UMA</a></h4>
+                            <p class="margin-bottom-none">Cocha Uma, enclavada en el corazón de Zumbahua,
+                                es un tesoro natural de los Andes ecuatorianos. Este lago de montaña ofrece
+                                 un reflejo tranquilo de los alrededores, capturando la belleza de la región.
+                                  Ideal para aquellos que buscan paz y naturaleza, Cocha Uma brinda senderos
+                                  panorámicos junto a sus aguas y la oportunidad de sumergirse en la calma.
+                                  Su entorno alberga una variada vida silvestre, atrayendo a observadores y
+                                  amantes de la ecología. Además de su atractivo natural, las comunidades
+                                  locales enriquecen la experiencia, compartiendo su herencia cultural a través
+                                   de sus tradiciones y hospitalidad.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
+                            <div class="flip margin-bottom-30">
+                                <div class="card">
+                                    <div class="face front"><img class="img-responsive" src="images/shalala2.jpg" alt=""></div>
+                                    <div class="face back">
+                                        <div class='hover_title'>Conocer sitio</div>
+                                        <a href="#"><i class="fa fa-link button_icon"></i></a></div>
+                                </div>
+                            </div>
+                            <h4><a href="#"style="margin-top: 10px;">SHALALA</a></h4>
+                            <p class="margin-bottom-none">El Mirador Shalalá, un tesoro en Zumbahua, ofrece vistas
+                                 panorámicas que quitan el aliento. Ubicado en lo alto de las montañas, este mirador
+                                  revela un escenario de belleza inigualable. Desde aquí, los visitantes pueden admirar
+                                  la majestuosidad de la naturaleza, con valles, fauna , flora y picos montañosos pintando el horizonte.
+                                   Ideal para los amantes de la fotografía y los observadores de aves, el Mirador Shalalá
+                                   proporciona una experiencia visual única. Además de su atractivo natural, este lugar
+                                   también ofrece la oportunidad de conocer la vida y la cultura locales, interactuando
+                                    con las comunidades cercanas y sumergiéndose en sus tradiciones auténticas.</p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:50px">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
+                            <div class="flip margin-bottom-30">
+                                <div class="card">
+                                    <div class="face front"><img class="img-responsive" src="images/quilotoa2.jpg" alt=""></div>
+                                    <div class="face back">
+                                        <div class='hover_title'>Conocer sitio</div>
+                                        <a href=""><i class="fa fa-link button_icon"></i></a> <a href="images/quilotoa3.jpg" class="fancybox"></a> </div>
+                                </div>
+                            </div>
+                            <h4><a href="#" style="margin-top: 10px;">LAGUNA QUILOTOA</a></h4>
+                            <p class="margin-bottom-none">
+                                El Quilotoa es un impresionante cráter de volcán ubicado en los Andes ecuatorianos.
+                                Su característica más destacada es su laguna de aguas cristalinas, que varía en
+                                tonalidades de azul y verde. Este lugar de belleza natural sorprendente es un
+                                destino popular para los amantes de la naturaleza y los aventureros.
+                                Los senderistas pueden recorrer el borde del cráter para disfrutar de vistas
+                                panorámicas espectaculares y, para aquellos más intrépidos, descender hasta la orilla de la laguna.
+                                 El Quilotoa es un punto focal cultural y turístico, enriquecido por la cercanía de comunidades
+                                  locales que comparten su rica herencia y artesanía tradicional con los visitantes.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
+                            <div class="flip horizontal margin-bottom-30">
+                                <div class="card">
+                                    <div class="face front"><img class="img-responsive" src="images/suma2.jpg" alt=""></div>
+                                    <div class="face back">
+                                        <div class='hover_title'>Conocer sitio</div>
+                                        <a href="#"><i class="fa fa-link button_icon"></i></a> </div>
+                                </div>
+                            </div>
+                            <h4><a href="#" style="margin-top: 10px;">COCHA UMA</a></h4>
+                            <p class="margin-bottom-none">Cocha Uma, enclavada en el corazón de Zumbahua,
+                                es un tesoro natural de los Andes ecuatorianos. Este lago de montaña ofrece
+                                 un reflejo tranquilo de los alrededores, capturando la belleza de la región.
+                                  Ideal para aquellos que buscan paz y naturaleza, Cocha Uma brinda senderos
+                                  panorámicos junto a sus aguas y la oportunidad de sumergirse en la calma.
+                                  Su entorno alberga una variada vida silvestre, atrayendo a observadores y
+                                  amantes de la ecología. Además de su atractivo natural, las comunidades
+                                  locales enriquecen la experiencia, compartiendo su herencia cultural a través
+                                   de sus tradiciones y hospitalidad.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
+                            <div class="flip margin-bottom-30">
+                                <div class="card">
+                                    <div class="face front"><img class="img-responsive" src="images/shalala2.jpg" alt=""></div>
+                                    <div class="face back">
+                                        <div class='hover_title'>Conocer sitio</div>
+                                        <a href="#"><i class="fa fa-link button_icon"></i></a></div>
+                                </div>
+                            </div>
+                            <h4><a href="#"style="margin-top: 10px;">SHALALA</a></h4>
+                            <p class="margin-bottom-none">El Mirador Shalalá, un tesoro en Zumbahua, ofrece vistas
+                                 panorámicas que quitan el aliento. Ubicado en lo alto de las montañas, este mirador
+                                  revela un escenario de belleza inigualable. Desde aquí, los visitantes pueden admirar
+                                  la majestuosidad de la naturaleza, con valles, fauna , flora y picos montañosos pintando el horizonte.
+                                   Ideal para los amantes de la fotografía y los observadores de aves, el Mirador Shalalá
+                                   proporciona una experiencia visual única. Además de su atractivo natural, este lugar
+                                   también ofrece la oportunidad de conocer la vida y la cultura locales, interactuando
+                                    con las comunidades cercanas y sumergiéndose en sus tradiciones auténticas.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </section>
         </div>
     </div>
 </section>
 
-<section class="copyright-wrap padding-bottom-10">
+<!--Inicio pie de página-->
+<footer class="design_2">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="logo-footer margin-bottom-20 md-margin-bottom-20 sm-margin-bottom-10 xs-margin-bottom-20"><a href="#">
-                    <h1>Prototipo</h1>
-                    <span>SITIO WEB</span></a>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-left-none md-padding-left-none sm-padding-left-15 xs-padding-left-15">
+                <h4>Noticias</h4>
+                <p>Suscribete a nuestro sitio web para recibir noticias.</p>
+                <form method="post" action="#" class="form_contact">
+                    <input type="text" value="" name="MERGE0" placeholder="Email Address">
+                    <input type="button" value="Subscribe" class="md-button">
+                    <input type="hidden" name="u" value="">
+                    <input type="hidden" name="id" value="">
+                </form>
                 </div>
-                <p>Copyright &copy; 2023 Stalyn Guanoluisa. Derechos reservados.</p>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                <ul class="social margin-bottom-25 md-margin-bottom-25 sm-margin-bottom-20 xs-margin-bottom-20 xs-padding-top-10 clearfix">
-                    <li><a class="sc-1" href="#"></a></li>
-                    <li><a class="sc-2" href="#"></a></li>
-                    
-                </ul>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-right-none md-padding-right-none sm-padding-right-15 xs-padding-right-15">
+                <h4>Contáctanos</h4>
+                <div class="footer-contact">
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> <strong>Dirección:</strong> Parroquia Zumbahua – Zona Centro</li>
+                        <li><i class="fa fa-phone"></i> <strong>Teléfono:</strong>032672-041</li>
+                        <li><i class="fa fa-envelope"></i> <strong>Correo:</strong><a href="#">gadprz 914@hotmail.com</a></li>
+                    </ul>
+
+                    <i class="fa fa-location-arrow back_icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="clearfix"></div>
+<section class="copyright-wrap padding-bottom-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="logo-footer margin-bottom-10 md-margin-bottom-10 sm-margin-bottom-10 xs-margin-bottom-10">
+                    <a href="index.html"><img src="images/logo1.png" alt="" width="200" height="350"></div></a>
+                    <p>Copyright &copy; 2023 Stalyn Guanoluisa. Todos los derechos reservados.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-top: 50px;">
+                <a  href="#"><image src="images/face.png" width="40" height="40" /></a>
+                <a  href="#"><image src="images/youtube.png" width="50" height="50" /></a>
+                <a  href="#"><image src="images/what.png" width="50" height="50" /></a>
+                <a  href="#"><image src="images/twuitter.png" width="50" height="50" /></a>
+                <a  href="#"><image src="images/insta.png" width="40" height="40" /></a>
+                <a  href="#"><image src="images/linkedin.png" width="55" height="55" /></a>
+                <a  href="#"><image src="images/print.png" width="40" height="40" /></a>
             </div>
         </div>
     </div>
 </section>
+<div class="back_to_top"> <img src="images/arrow-up.png" alt="scroll up" /> </div>
+<!--Archivos Bootstrap y JavaScript -->
+<script src="js/retina.js"></script>
+<script type="text/javascript" src="js/jquery.parallax.js"></script>
+<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script defer src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.bxslider.js" type="text/javascript"></script>
 
-<!-- Bootstrap core JavaScript --> 
-<script src="js/retina.js"></script> 
-<script type="text/javascript" src="js/jquery.parallax.js"></script> 
-<script type="text/javascript" src="js/jquery.inview.min.js"></script> 
-<script src="js/main.js"></script> 
-<script type="text/javascript" src="js/jquery.fancybox.js"></script> 
-<script src="js/modernizr.custom.js"></script> 
-<script defer src="js/jquery.flexslider.js"></script> 
-<script src="js/jquery.bxslider.js" type="text/javascript"></script> 
-<script src="js/jquery.selectbox-0.2.js" type="text/javascript"></script> 
-<script type="text/javascript" src="js/jquery.mousewheel.js"></script> 
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
 </body>
 </html>
