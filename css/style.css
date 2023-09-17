@@ -83,11 +83,11 @@ body {
 }
 
 a {
-	color: #005959;
+	color: #53808e;
 }
 
 a:hover {
-	color: #005959;
+	color: #53808e;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -335,7 +335,7 @@ a.sbSelector:link, a.sbSelector:visited, a.sbSelector:hover {
 }
 
 .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
-	background-color: #005959;
+	background-color: #53808e;
 	color: #FFF;
 }
 
@@ -352,7 +352,7 @@ img.display-img {
 
 .firstcharacter {
 	float: left;
-	color: #005959;
+	color: #53808e;
 	font-size: 70px;
 	line-height: 58px;
 	padding-top: 4px;
@@ -367,7 +367,7 @@ img.display-img {
 }
 
 .progressbar .progress .progress-bar-danger {
-	background-color: #005959;
+	background-color: #53808e;
 }
 
 .progressbar .progress .progress-bar {
@@ -408,7 +408,7 @@ img.display-img {
 .choose-list ul li:before {
 	width: 16px;
 	height: 16px;
-	background: #005959;
+	background: #53808e;
 	font-family: FontAwesome;
 	content: "\f105";
 	margin-right: 10px;
@@ -435,7 +435,7 @@ img.display-img {
 }
 
 .list-info span.text-red {
-	color: #005959;
+	color: #53808e;
 }
 
 .list-info p, .list-info a {
@@ -499,7 +499,7 @@ hr {
 .alternate-font {
 	font-size: 1.5em;
 	font-family: 'Yellowtail', cursive;
-	color: #005959;
+	color: #53808e;
 }
 
 /*  B. Header
@@ -507,7 +507,7 @@ hr {
 
 
 header {
-	background: rgba(0, 0, 0, 0.65);
+	background: rgba(236,237,223,0.75);
 	position: absolute;
 	z-index: 1000;
 	width: 100%;
@@ -552,7 +552,7 @@ header, header * {
 }
 
 .toolbar ul li a {
-	color: #929596;
+	color: #575554;
 	font-size: 10px;
 	line-height: 30px;
 	font-weight: 600;
@@ -649,7 +649,7 @@ header .bottom-header .navbar-default .navbar-nav>li>a {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
-	color: #fff;
+	color: #53808e;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 31px;
 	padding: 25px 15px 25px 15px;
@@ -657,12 +657,13 @@ header .bottom-header .navbar-default .navbar-nav>li>a {
 }
 
 .bottom-header .navbar-default .navbar-nav>.active>a, .bottom-header .navbar-default .navbar-nav>.active>a:hover, .bottom-header .navbar-default .navbar-nav>.active>a:focus {
-	background-color: #005959;
+	background-color: #53808e;
 	color: #fff;
 }
 
 .bottom-header .navbar-default .navbar-nav> li> a:hover {
-	background-color: #005959;
+	background-color: #53808e;
+	color:#fff
 }
 
 header.affix {
@@ -672,9 +673,6 @@ header.affix {
 header.affix .bottom-header .navbar-default .navbar-brand {
 	padding: 11px 0 0 15px;
 	height: 59px;
-}
-
-header.affix .toolbar {
 }
 
 header.affix .container .navbar {
@@ -696,7 +694,7 @@ header.affix .container .navbar .navbar-nav li a {
 }
 
 header .nav .open>a, header .nav .open>a:hover, header .nav .open>a:focus, header .navbar-default .navbar-nav>.open>a, header .navbar-default .navbar-nav>.open>a:hover, header .navbar-default .navbar-nav>.open>a:focus {
-	background-color: #005959;
+	background-color: #53808e;
 	color: #fff;
 }
 
@@ -842,7 +840,7 @@ header.affix .bottom-header .navbar-default .navbar-brand .logo .secondary_text 
 
 
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
-	background-color: #005959;
+	background-color: #53808e;
 }
 
 .dropdown-menu {
@@ -879,7 +877,7 @@ header.affix .bottom-header .navbar-default .navbar-brand .logo .secondary_text 
 }
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
-	background-color: #005959;
+	background-color: #53808e;
 }
 
 .dropdown-menu>li:last-of-type>a, .dropdown-menu>li:last-of-type>a {
@@ -1511,7 +1509,7 @@ table.right_table {
 	font-size: 75px;
 	font-weight: 200;
 	letter-spacing: -6px;
-	color: #005959;
+	color: #53808e;
 }
 
 .tp-banner ul li div.thin_white {
@@ -1691,7 +1689,7 @@ table.right_table {
     font-size: 75px;
     font-weight: 200;
     letter-spacing: -6px;
-    color: #005959;
+    color: #53808e;
 }
 
 .tp-caption.thin_white {
@@ -1730,7 +1728,7 @@ table.right_table {
 .default-btn, .btn-inventory, button, input[type="reset"], input[type="button"], input[type="submit"] {
 	font-size: 15.5px;
 	padding: 5px 13px;
-	background-color: #005959;
+	background-color: #53808e;
 	border-radius: 4px;
 	border: 0;
 	color: #fff;
@@ -1858,7 +1856,7 @@ footer .default-btn:active, footer .btn-inventory:active, footer button:active, 
 .car-block-wrap h4 a {
 	margin: 28px 0 12px 0;
 	display: block;
-	color: #005959;
+	color: #53808e;
 	font-size: 20px;
 	font-weight: 800;
 	font-family: 'Open Sans', sans-serif, Arial;
@@ -1899,7 +1897,7 @@ footer .default-btn:active, footer .btn-inventory:active, footer button:active, 
 }
 
 .welcome-wrap h4 {
-	color: #005959;
+	color: #53808e;
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif, Arial;
 	margin-bottom: 23px;
@@ -1927,7 +1925,7 @@ footer .default-btn:active, footer .btn-inventory:active, footer button:active, 
 }
 
 .small-block:hover h4, .small-block:hover a i {
-	color: #005959;
+	color: #53808e;
 	transition-duration: .25s;
 }
 
@@ -1960,7 +1958,7 @@ footer .small-block:hover h4, footer .small-block:hover i, footer .small-block:h
 .recent-vehicles h5 {
 	font-weight: 800;
 	text-transform: uppercase;
-	color: #005959;
+	color: #53808e;
 	margin: 0;
 	font-family: "Open Sans";
 	margin-right: -15px;
@@ -2038,7 +2036,7 @@ footer .small-block:hover h4, footer .small-block:hover i, footer .small-block:h
 }
 
 .car-block:hover .car-block-bottom {
-	background-color: #005959;
+	background-color: #53808e;
 }
 
 .car-block h6 strong {
@@ -2096,7 +2094,7 @@ footer .small-block:hover h4, footer .small-block:hover i, footer .small-block:h
 }
 
 .controls .left-arrow:hover, .controls .right-arrow:hover {
-	background-color: #005959;
+	background-color: #53808e;
 }
 
 .controls .left-arrow:active, .controls .right-arrow:active {
@@ -2206,7 +2204,7 @@ input[type=text]:focus, .leave-comments form input[type=text]:focus, .leave-comm
 
 .no_footer .logo-footer a span {
 	text-align: center;
-	color: #005959;
+	color: #53808e;
 	padding-left: 22px;
 }
 
@@ -2632,7 +2630,7 @@ footer.design_2 h4 {
 }
 
 .back_to_top:hover {
-	background-color: #005959;
+	background-color: #53808e;
 }
 
 /*  K. Form Styles
@@ -3066,7 +3064,7 @@ div.custom-select:last-child {
 	-o-transform: rotateY(-180deg);
 	-ms-transform: rotateY(-180deg);
 	transform: rotateY(-180deg);
-	background-color: #005959;
+	background-color: #53808e;
 }
 
 .flip .card .face {
@@ -3102,7 +3100,7 @@ div.custom-select:last-child {
 }
 
 .flip .card .back i.button_icon:hover:before {
-	color: #005959;
+	color: #53808e;
 }
 
 .flip .card .back i.button_icon:hover {
@@ -3152,7 +3150,7 @@ div.custom-select:last-child {
 .about-us h3, .blog-container h3, .blog-post h3, .side-content h3, .services h3 {
 	font-size: 19px;
 	font-weight: 800;
-	color: #005959;
+	color: #53808e;
 	margin: 0;
 }
 
@@ -3267,7 +3265,7 @@ div.custom-select:last-child {
 }
 
 .list_faq ul li.active a {
-	color: #005959;
+	color: #53808e;
 }
 
 .list_faq ul li a {
@@ -3275,7 +3273,7 @@ div.custom-select:last-child {
 }
 
 .list_faq ul li a:hover {
-	color: #005959;
+	color: #53808e;
 	text-decoration: none;
 }
 
@@ -3302,7 +3300,7 @@ div.custom-select:last-child {
 	position: absolute;
 	content: "-";
 	display: block;
-	background: #005959;
+	background: #53808e;
 	width: 25px;
 	height: 25px;
 	text-align: center;
@@ -3366,7 +3364,7 @@ div.custom-select:last-child {
 
 .right_faq .side-widget h3 {
 	margin-top: 0px;
-	color: #005959;
+	color: #53808e;
 	font-size: 20px;
 	font-weight: 800;
 }
@@ -3405,7 +3403,7 @@ h3.recent_posts {
 }
 
 .side-content .side-blog strong {
-	color: #005959;
+	color: #53808e;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: normal;
@@ -3463,7 +3461,7 @@ h3.recent_posts {
 .side-content .list ul li:last-child a {
 	font-size: 14px;
 	font-weight: 700;
-	color: #005959;
+	color: #53808e;
 }
 
 .side-content .list ul li:last-child a:hover {
@@ -3471,7 +3469,7 @@ h3.recent_posts {
 }
 
 .side-content .list ul li span {
-	color: #005959;
+	color: #53808e;
 	font-size: 14px
 }
 
@@ -3533,7 +3531,7 @@ h3.recent_posts {
 }
 
 .main_pricing h3 b {
-	color: #005959;
+	color: #53808e;
 	font-weight: normal;
 	position: absolute;
 	top: 26%;
@@ -3564,14 +3562,14 @@ h3.recent_posts {
 }
 
 .layout-3 .pricing-header {
-	background-color: #005959;
+	background-color: #53808e;
 	text-align: center;
 	display: block;
 	color: #fff;
 }
 
 .layout-4 .pricing-header {
-	background-color: #005959;
+	background-color: #53808e;
 	text-align: center;
 	display: block;
 	color: #fff;
@@ -3605,7 +3603,7 @@ h3.recent_posts {
 
 .layout-3 .main_pricing .inside span.amt, .layout-4 .main_pricing .inside span.amt {
 	font-size: 92px;
-	color: #005959;
+	color: #53808e;
 	line-height: 92px;
 	letter-spacing: -5px;
 	margin-right: 5px;
@@ -3613,7 +3611,7 @@ h3.recent_posts {
 
 .layout-3 .main_pricing .inside span.sub1, .layout-4 .main_pricing .inside span.sub1 {
 	font-size: 28px;
-	color: #005959;
+	color: #53808e;
 	position: relative;
 	top: -46px;
 }
@@ -4168,7 +4166,7 @@ ul.top_buttons li a {
 #features ul li .fa-li {
 	left: -8px;
 	top: 5px;
-	color: #005959;
+	color: #53808e;
 }
 
 .content-nav ul li.gradient_button:hover, .gradient_button:hover {
@@ -4572,7 +4570,7 @@ ul.nav-tabs li.active a {
 }
 
 .left_inventory h2 {
-	color: #005959;
+	color: #53808e;
 	font-weight: bolder;
 	font-size: 20px;
 }
@@ -4580,7 +4578,7 @@ ul.nav-tabs li.active a {
 .side-content .list h3 {
 	font-size: 20px;
 	font-weight: 800;
-	color: #005959;
+	color: #53808e;
 	margin: 0;
 }
 
@@ -4601,7 +4599,7 @@ ul.nav-tabs li.active a {
 .side-content .financing_calculator h3 {
 	font-size: 20px;
 	font-weight: 800;
-	color: #005959;
+	color: #53808e;
 	margin: 0;
 }
 
@@ -4671,7 +4669,7 @@ ul.nav-tabs li.active a {
 }
 
 .left_inventory h3 {
-	color: #005959;
+	color: #53808e;
 	font-weight: 800;
 	font-size: 20px;
 	margin-top: 0;
@@ -4685,7 +4683,7 @@ ul.nav-tabs li.active a {
 .side-content .list h3 {
 	font-size: 20px;
 	font-weight: 800;
-	color: #005959;
+	color: #53808e;
 	margin: 0;
 }
 
@@ -4706,7 +4704,7 @@ ul.nav-tabs li.active a {
 .side-content .financing_calculator h3 {
 	font-size: 20px;
 	font-weight: 800;
-	color: #005959;
+	color: #53808e;
 	margin: 0;
 	letter-spacing: -0.5px;
 }
@@ -5048,7 +5046,7 @@ table.technical tbody tr td {
 
 
 .porche .porche-header {
-	background-color: #005959;
+	background-color: #53808e;
 	text-align: center;
 	color: #fff;
 	padding: 14px 0px 7px 0;
@@ -5132,7 +5130,7 @@ table.technical tbody tr td {
 	font-family: fontAwesome;
 	content: "\f00c";
 	display: block;
-	color: #005959;
+	color: #53808e;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -5671,7 +5669,7 @@ div img.carfax {
 	font-family: fontAwesome;
 	content: "\f00c";
 	display: block;
-	color: #005959;
+	color: #53808e;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -5689,7 +5687,7 @@ div img.carfax {
 
 .featured-service h2, .featured-service h2 strong, .detail-service h2, .detail-service h2 strong {
 	font-size: 30px;
-	color: #005959;
+	color: #53808e;
 	letter-spacing: -1.5px;
 }
 
@@ -5711,7 +5709,7 @@ div img.carfax {
 }
 
 .featured-service .featured:hover {
-	background-color: #005959;
+	background-color: #53808e;
 	color: #FFF;
 }
 
@@ -5744,7 +5742,7 @@ div img.carfax {
 }
 
 .featured-service .featured .caption {
-	background-color: #005959;
+	background-color: #53808e;
 	position: absolute;
 	color: #fff;
 	z-index: 100;
@@ -5801,7 +5799,7 @@ div img.carfax {
 .detail-service .details h5:before {
 	font-size: 34px;
 	font-family: FontAwesome;
-	color: #005959;
+	color: #53808e;
 	vertical-align: middle;
 	margin-right: 15px;
 }
@@ -5835,7 +5833,7 @@ div img.carfax {
 
 
 .find_team h2 {
-	color: #005959;
+	color: #53808e;
 	font-size: 20px;
 	font-weight: 800;
 }
@@ -5906,7 +5904,7 @@ div img.carfax {
 }
 
 .find_team h2 {
-	color: #005959;
+	color: #53808e;
 	font-size: 20px;
 	font-weight: 800;
 }
@@ -5953,7 +5951,7 @@ div img.carfax {
 }
 
 .find_team h2 {
-	color: #005959;
+	color: #53808e;
 	font-size: 20px;
 	font-weight: 800;
 	letter-spacing: -0.5px;
@@ -6035,12 +6033,12 @@ div img.carfax {
 }
 
 .our_inventory h4 {
-	color: #005959;
+	color: #53808e;
 	font-size: 24px;
 }
 
 .our_inventory span {
-	color: #005959;
+	color: #53808e;
 	font-size: 24px;
 	font-weight: 800;
 	margin-right: 0px;
@@ -6132,7 +6130,7 @@ div img.carfax {
 }
 
 .year_wrapper span {
-	color: #005959;
+	color: #53808e;
 	font-size: 14px;
 	font-weight: normal;
 	color: #000;
@@ -6206,7 +6204,7 @@ div.secect_costom4 {
 }
 
 .flexslider2 .flex-direction-nav li a:hover {
-	background: #005959;
+	background: #53808e;
 }
 
 .flexslider2:hover a.flex-next {
@@ -6247,7 +6245,7 @@ div.secect_costom4 {
 
 .right_site_job .project_details ul li i {
 	margin-right: 5px;
-	color: #005959;
+	color: #53808e;
 }
 
 .right_site_job .job p {
@@ -6367,7 +6365,7 @@ div.secect_costom4 {
 }
 
 .arrow1 a:hover, .arrow2 a:hover, .arrow3 a:hover {
-	background-color: #005959;
+	background-color: #53808e;
 	text-decoration: none;
 }
 
@@ -6597,7 +6595,7 @@ img.aligncenter {
 }
 
 .read-more a {
-	color: #005959;
+	color: #53808e;
 	font-size: 14px;
 	font-weight: 700;
 }
@@ -6630,7 +6628,7 @@ img.aligncenter {
 .blog-content .post-entry blockquote {
 	padding: 0px 20px;
 	margin: 20px 0 25px;
-	border-left: 7px solid #005959;
+	border-left: 7px solid #53808e;
 	font-size: 19px;
 }
 
@@ -6706,7 +6704,7 @@ img.aligncenter {
 }
 
 .comment-data .comment-author a {
-	color: #005959;
+	color: #53808e;
 	font-weight: 700;
 }
 
@@ -6771,7 +6769,7 @@ img.aligncenter {
 
 
 .find_map h2 {
-	color: #005959;
+	color: #53808e;
 	font-size: 20px;
 	font-weight: 800;
 }
@@ -6781,7 +6779,7 @@ img.aligncenter {
 }
 
 .information_head h3 {
-	color: #005959;
+	color: #53808e;
 	font-size: 20px;
 	font-weight: 800;
 }
@@ -6821,7 +6819,7 @@ img.aligncenter {
 }
 
 .address ul li span.compayWeb_color {
-	color: #005959;
+	color: #53808e;
 }
 
 .address ul li i, .address ul li strong, .address ul li span {
@@ -7240,7 +7238,7 @@ section.content, .car-block-wrap, .welcome-wrap {
 .tp-banner { visibility: hidden; }
 
 
-.listing-slider .angled_badge.red:before    { border-color: #005959 rgba(0, 0, 0, 0); }
+.listing-slider .angled_badge.red:before    { border-color: #53808e rgba(0, 0, 0, 0); }
 .listing-slider .angled_badge.orange:before { border-color: #ff4422 rgba(0, 0, 0, 0); }
 .listing-slider .angled_badge.yellow:before { border-color: #feae2d rgba(0, 0, 0, 0); }
 .listing-slider .angled_badge.green:before  { border-color: #69d025 rgba(0, 0, 0, 0); }
@@ -7249,7 +7247,7 @@ section.content, .car-block-wrap, .welcome-wrap {
 .listing-slider .angled_badge.violet:before { border-color: #442299 rgba(0, 0, 0, 0); }
 .listing-slider .angled_badge.black:before  { border-color: #000000 rgba(0, 0, 0, 0); }
 
-.angled_badge.red:before    { border-color: rgba(0, 0, 0, 0) #005959 rgba(0, 0, 0, 0); }
+.angled_badge.red:before    { border-color: rgba(0, 0, 0, 0) #53808e rgba(0, 0, 0, 0); }
 .angled_badge.orange:before { border-color: rgba(0, 0, 0, 0) #ff4422 rgba(0, 0, 0, 0); }
 .angled_badge.yellow:before { border-color: rgba(0, 0, 0, 0) #feae2d rgba(0, 0, 0, 0); }
 .angled_badge.green:before  { border-color: rgba(0, 0, 0, 0) #69d025 rgba(0, 0, 0, 0); }
@@ -7301,7 +7299,7 @@ section.content, .car-block-wrap, .welcome-wrap {
     height: 0;
     border-style: solid;
     border-width: 0 100px 100px 0;
-    border-color: rgba(0, 0, 0, 0) #005959 rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0) #53808e rgba(0, 0, 0, 0);
 }
 
 .angled_badge span {
@@ -7334,8 +7332,8 @@ section.content, .car-block-wrap, .welcome-wrap {
     position: absolute;
     font-size: 38px;
     line-height: 52px;
-    border: 6px solid #005959;
-    color: #005959;
+    border: 6px solid #53808e;
+    color: #53808e;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.75);
     padding: 3px 5px;
@@ -7374,8 +7372,8 @@ section.content, .car-block-wrap, .welcome-wrap {
     top: 14%;
     font-size: 26px;
     line-height: 38px;
-    border: 6px solid #005959;
-    color: #005959;
+    border: 6px solid #53808e;
+    color: #53808e;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.75);
     padding: 3px 5px;
