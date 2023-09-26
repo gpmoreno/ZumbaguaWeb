@@ -527,7 +527,7 @@ header, header * {
 	min-height: 30px;
 	position: relative;
 	z-index: 5555;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(68, 67, 66, 0.5);
 	display: block;
 }
 
@@ -552,8 +552,8 @@ header, header * {
 }
 
 .toolbar ul li a {
-	color: #575554;
-	font-size: 10px;
+	color: #f1a72f;
+	font-size: 11px;
 	line-height: 30px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -691,7 +691,7 @@ header.affix .container .navbar .navbar-brand img {
 header.affix .container .navbar .navbar-nav li a {
 	line-height: 10px;
 	padding: 28px 10px 21px 10px;
-	font-size: 12px;
+	font-size: 14px;
 	transition-duration: .15s;
 }
 
