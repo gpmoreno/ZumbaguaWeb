@@ -691,7 +691,7 @@ header.affix .container .navbar .navbar-brand img {
 header.affix .container .navbar .navbar-nav li a {
 	line-height: 10px;
 	padding: 28px 10px 21px 10px;
-	font-size: 12px;
+	font-size: 14px;
 	transition-duration: .15s;
 }
 
