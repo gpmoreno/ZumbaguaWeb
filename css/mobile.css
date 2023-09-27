@@ -507,11 +507,16 @@ header .bottom-header .navbar-default .navbar-brand {
 	margin: 10px 0 0 0;
 }
 }
-
+/*Stalyn: cambio de color de menu responsivo*/
 @media only screen and (max-width: 1000px) {
 
 header .bottom-header .navbar-default .navbar-nav>li>a {
 	padding: 23px 4px 25px 4px !important;
+	background: rgba(241, 167, 47, 0.80);
+}
+
+header .bottom-header .navbar-default .navbar-nav>li>a:hover {
+  background: orange; 
 }
 
 .latest-news {
@@ -597,9 +602,9 @@ body header.affix {
 	background-color: transparent;
 	margin-top: 17px;
 }
-
+/*Stalyn:cambio color sanduche responsivo*/
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: transparent;
+	background-color: rgba(68, 67, 66, 0.65);
 }
 
 .banner-wrap {
@@ -1168,7 +1173,7 @@ header .bottom-header .navbar-default .navbar-brand .logo {
 
 .flip, .flip .card, .flip .card .face {
 	height: 200px;
-	width: 370px;
+	width: 410px;
 	border: none;
 }
 
