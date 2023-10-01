@@ -41,10 +41,51 @@
 <script type="text/javascript" src="js/extensions/revolution.extension.slideanims.min.js"></script>
 <script type="text/javascript" src="js/extensions/revolution.extension.video.min.js"></script>
 <style>
-    p {
-      text-align: justify;
-    }
-    </style>
+
+
+/* Estilo inicial de la imagen */
+.imagen-expansible {
+  max-width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Estilo cuando la imagen está agrandada */
+.imagen-expansible.active {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 999;
+}
+
+/* Estilo inicial de la imagen */
+.imagen-expansible2 {
+  max-width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Estilo cuando la imagen está agrandada */
+.imagen-expansible2.active {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 999;
+}
+
+</style>
 </head>
 
 <body>
@@ -78,7 +119,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav pull-right">
                             <li><a href="index.html">Inicio</a></li>
-                            <li><a href="zumbahua.html">Zumbahua</a></li>
+                            <li><a href="#zumbahua">Zumbahua</a></li>
                             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Paraisos Escondidos <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="quilotoa.html">Laguna de Quilotoa</a></li>
@@ -402,7 +443,7 @@
                 </div>
             </section>
 </section>
-<section class="content" style="margin-top: 40px;">
+<section class="content" id="zumbahua">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <img src="images/que hacer.jpg" alt="">
@@ -442,26 +483,14 @@
             <div class="clearfix"></div>
         </div>
         
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">     
-                <div class="flip horizontal">
-                    <div class="card">
-                        <div class="face front"><img class="img-responsive" src="images/mapa zumbahua.jpg" alt=""></div>
-                        <div class="face back">
-                            <a href="#"><img class="img-responsive" src="images/mapa zumbahua.jpg"class="fancybox" ></a> 
-                        </div>
-                    </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="contenedor-imagen">
+                    <div class=""><img class="imagen-expansible" src="images/mapa zumbahua.jpg" alt="" id="imagen"></div>
                 </div>
-                <h4><a href="#">PINTURAS TIGUA</a></h4>
 
-                <div class="flip horizontal"style="margin-top:80px">
-                    <div class="card">
-                        <div class="face front"><img class="img-responsive" src="images/mapa atractivos.jpg" alt=""></div>
-                        <div class="face back">
-                            <a href="#"><img class="img-responsive" src="images/mapa atractivos.jpg"class="fancybox" ></a> 
-                        </div>
+                    <div class="contenedor-imagen2" style="margin-top: 60px;">
+                        <div class=""><img class="imagen-expansible2" src="images/mapa atractivos.jpg" alt="" id="imagen2"></div>
                     </div>
-                </div>
-                <h4><a href="#">PINTURAS TIGUA</a></h4>
             </div>    
     </div>
 </section>
@@ -531,3 +560,35 @@
 <script type="text/javascript" src="js/jquery.easing.js"></script>
 </body>
 </html>
+<script>
+    $(document).ready(function() {
+      $("#zumbahua").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+
+    var imagen = document.getElementById('imagen');
+
+// Obtén la imagen por su ID
+var imagen = document.getElementById('imagen');
+var imagen2 = document.getElementById('imagen2');
+// Agrega un event listener para el clic
+imagen.addEventListener('click', function() {
+  // Toggle (agrega o quita) la clase 'active' para cambiar el tamaño
+  this.classList.toggle('active');
+});
+
+imagen2.addEventListener('click', function() {
+  // Toggle (agrega o quita) la clase 'active' para cambiar el tamaño
+  this.classList.toggle('active');
+});
+  </script>
+
