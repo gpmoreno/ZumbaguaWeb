@@ -3713,20 +3713,6 @@ h3.recent_posts {
 ----------------------------*/
 
 
-.page-view, .form-links li a, .video-link {
-	padding: 0;
-	list-style: none;
-	margin-bottom: 0;
-	margin-right: 0;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	float: right;
-	display: block;
-	-moz-border-radius: 5px / 3px;
-	-webkit-border-radius: 5px / 3px;
-	border-radius: 5px / 3px;
-	background: #F7F7F7;
-}
 
 ul.top_buttons li a {
 	border: 1px solid rgba(0, 0, 0, 0.0980392);
@@ -4262,9 +4248,6 @@ ul.nav-tabs li.active a {
 	font-size: 12px;
 }
 
-.video_details {
-	margin-top: 0px;
-}
 
 .price-wrap .price-tag {
 	font-size: 30px;
@@ -4523,9 +4506,6 @@ ul.nav-tabs li.active a {
 	font-size: 12px;
 }
 
-.video_details a {
-	text-decoration: none;
-}
 
 .view_viewport a {
 	text-decoration: none;
@@ -4545,10 +4525,6 @@ ul.nav-tabs li.active a {
 .flex-direction-nav a.flex-next:before {
 	padding-left: 0;
 	padding-right: 5px;
-}
-
-#youtube_video {
-	display: none;
 }
 
 #current_size {
@@ -4776,35 +4752,6 @@ ul.nav-tabs li.active a {
 	width: 85px;
 }
 
-.content-nav ul li.gradient_button, .gradient_button.view-details, .gradient_button.view-video, div.example-tabs .nav-tabs>li>a {
-	background-color: #f9f9f9;
-	-webkit-border-top-left-radius: 9px;
-	-moz-border-radius-topleft: 9px;
-	border-top-left-radius: 9px;
-	-webkit-border-top-right-radius: 9px;
-	-moz-border-radius-topright: 9px;
-	border-top-right-radius: 9px;
-	-webkit-border-bottom-right-radius: 0px;
-	-moz-border-radius-bottomright: 0px;
-	border-bottom-right-radius: 0px;
-	-webkit-border-bottom-left-radius: 0px;
-	-moz-border-radius-bottomleft: 0px;
-	border-bottom-left-radius: 0px;
-	text-indent: 0px;
-	border: 1px solid #dcdcdc;
-	display: inline-block;
-	color: #3a3a3a;
-	font-family: Arial;
-	font-size: 12px;
-	font-weight: bold;
-	font-weight: 700;
-	font-style: normal;
-	height: 30px;
-	line-height: 22px;
-	text-decoration: none;
-	text-align: center;
-	text-shadow: 1px 1px 0px #ffffff;
-}
 
 div.example-tabs .nav-tabs>li.active>a {
 	color: #3a3a3a;
@@ -4812,15 +4759,6 @@ div.example-tabs .nav-tabs>li.active>a {
 	background-color: #FFF;
 }
 
-.gradient_button.view-details, .gradient_button.view-video {
-	position: absolute;
-	bottom: 10px;
-	border-radius: 5px;
-	height: 26px;
-	line-height: 14px;
-	padding-left: 9px;
-	padding-right: 9px;
-}
 
 div.example-tabs .nav-tabs>li>a {
 	font-size: 14px;
@@ -4841,9 +4779,7 @@ div.example-tabs .nav-tabs>li>a {
 	margin-top: 12px;
 }
 
-.video-link:active {
-	background: url(../images/input-bg-hover.png) top repeat-x;
-}
+
 
 .car-info-wrap p {
 	padding: 0 11px;
@@ -5215,15 +5151,7 @@ div.inventory.span3 .price {
 	top: -22px;
 }
 
-div.inventory.span3 .view-video {
-	position: absolute;
-	left: 9px;
-	top: auto;
-	bottom: 10px;
-	float: left;
-	clear: left;
-	padding: 6px 9px;
-}
+
 
 div.inventory.span3 .view-details {
 	position: absolute;
@@ -5307,15 +5235,6 @@ div.inventory.span3 .price b {
 	left: 128px;
 }
 
-.boxed div.inventory .view-video {
-	position: absolute;
-	left: 9px;
-	top: auto;
-	bottom: 10px;
-	float: left;
-	clear: left;
-	z-index: 5;
-}
 
 .boxed div.inventory .view-details {
 	position: absolute;
@@ -5617,29 +5536,12 @@ div img.carfax {
 	top: 6px;
 }
 
-.view-video {
-	left: 236px;
-	clear: left;
-	padding: 6px 9px;
-	cursor: pointer;
-}
-
-.video-icon {
-	position: relative;
-	left: 213px;
-	top: 18px;
-	float: left;
-	z-index: 3;
-}
 
 .view-details {
 	right: 10px;
 	padding: 6px 4px;
 }
 
-.view-details i, .view-video i {
-	margin-right: 6px;
-}
 
 /*  I. Services
 ----------------------------*/
