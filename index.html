@@ -15,12 +15,10 @@
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="screen" />
 <link href="css/jquery.fancybox.css" rel="stylesheet">
-<link href="css/jquery.selectbox.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/mobile.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
 <link href="css/animate.min.css" rel="stylesheet">
-<link href="css/ts.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -83,6 +81,40 @@
   bottom: 0;
   margin: auto;
   z-index: 999;
+}
+
+
+/* Estilo de la imagen con hover solo en pantallas pequeñas (col-xs-12) */
+@media (max-width: 576px) {
+  .col-xs-12:hover .imagen-con-hover {
+    transform: scale(1.2); /* Efecto de escala en hover */
+  }
+}
+
+.video-box {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    margin: 0px auto 0;
+  }
+  .video video {
+    width: 100%;
+    height: auto;
+  }
+ 
+  .iframe-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Esta es la relación de aspecto 16:9 (9 / 16 * 100%) */
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 </style>
@@ -446,12 +478,12 @@
 <section class="content" id="zumbahua">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img src="images/que hacer.jpg" alt="">
+            <img src="images/que hacer.jpg" alt="Que hacer en Zumbahua" class="imagen-con-hover">
         </div>
     </div>
 </section>
 <!--CARROUSEL FINAL-->
-<section class="content">
+<section class="content" style="margin-top: 40px;">
     <div class="row">
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 left-content padding-left-none"> 
             <div class="listing-slider">
@@ -495,8 +527,28 @@
     </div>
 </section>
 
+<section class="content" style="margin-top: 40px;">
+    <div class="row">
+     <div class="col-lg-6 col-md-6 col-xs-12" >  
+        <div class="video-box">
+          <div class="video"> 
+            <video width="800" autoplay muted id="miVideo">
+             <source src="videos/quilotoa.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+     </div>
+     <div class="col-lg-6 col-md-6 col-xs-12" >  
+        <div class="iframe-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15957.044140820812!2d-78.91191976575915!3d-0.9576456845295301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d493dceaca6f0d%3A0x387486c6478dee07!2sZumbagua!5e0!3m2!1ses-419!2sec!4v1696178481452!5m2!1ses-419!2sec" 
+                  frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+     </div>
+    </div>
+</section>
 <!--Inicio pie de página-->
-<footer class="design_2">
+<footer class="design_2" style="margin-top: 40px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-left-none md-padding-left-none sm-padding-left-15 xs-padding-left-15">
@@ -590,5 +642,20 @@ imagen2.addEventListener('click', function() {
   // Toggle (agrega o quita) la clase 'active' para cambiar el tamaño
   this.classList.toggle('active');
 });
-  </script>
+
+$(document).ready(function() {
+      var video = $('#miVideo')[0]; // Obtén el elemento de video
+      video.loop = true; // Habilita la reproducción en bucle
+      video.muted = true; // Silencia el video (opcional)
+
+      // Agrega un evento "ended" para reiniciar el video
+      video.addEventListener('ended', function() {
+        this.currentTime = 0; // Reinicia al inicio
+        this.play(); // Inicia la reproducción nuevamente
+      });
+
+      // Inicia la reproducción del video
+      video.play();
+    });
+</script>
 
