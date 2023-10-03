@@ -43,6 +43,27 @@
     <script type="text/javascript" src="js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="js/extensions/revolution.extension.video.min.js"></script>
     <style>
+        /* Estilo inicial de la imagen */
+        .imagen-expansible {
+            max-width: 100%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Estilo cuando la imagen está agrandada */
+        .imagen-expansible.active {
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 999;
+        }
+
         .video-box {
             width: 100%;
             max-width: 100%;
@@ -53,6 +74,22 @@
         .video video {
             width: 100%;
             height: auto;
+        }
+
+        .iframe-container {
+            position: relative;
+            padding-bottom: 40.25%;
+            /* Esta es la relación de aspecto 16:9 (9 / 16 * 100%) */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -134,81 +171,101 @@
 
     <section class="content" style="margin-top: 40px;">
         <div class="row">
-            <div class="col-lg-6 col-md-6">
-                <div class="right_site_job">
-                    <div class="job sm-padding-bottom-0 xs-padding-bottom-0 xs-padding-top-0">
-                        <h2>Historia</h2>
-                        <p>La historia del Quilotoa se remonta a unos 800 años atrás, cuando el volcán entró en erupción
-                            y provocó un colapso de su cráter, formando una caldera de casi 9 km de diámetro. El flujo
-                            de lava y ceniza se extendió hasta el Océano Pacífico y cubrió gran parte de los Andes.</p>
-                        <p>Con el paso del tiempo, la caldera se fue llenando de agua de lluvia y deshielo, dando origen
-                            a la laguna que hoy conocemos. La laguna tiene un color turquesa que cambia según la luz del
-                            sol y la estación del año. Su profundidad se estima en unos 250 metros.</p>
-                        <p>El Quilotoa es un lugar sagrado para los pueblos indígenas que habitan la zona, especialmente
-                            los kichwas. Según una leyenda, el Quilotoa era el dios del fuego que se enamoró de la diosa
-                            del agua, Toa. Su amor era tan fuerte que se fusionaron en una sola entidad, dando vida a la
-                            hermosa laguna Quilotoa.</p>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <img src="images/baner intro 3.jpg" alt="">
+            </div>
+        </div>
+    </section>
 
+    <section class="content" style="margin-top: 40px;">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 left-content padding-left-none">
+                <div class="listing-slider">
+                    <section class="slider home-banner">
+                        <div class="flexslider" id="home-slider-canvas">
+                            <ul class="slides">
+                                <li data-thumb=""> <img src="images/zumbahua post 1.jpg" alt=""
+                                        data-full-image="images/zumbahua post 1.jpg" /> </li>
+                                <li data-thumb=""> <img src="images/zumbahua post.jpg" alt=""
+                                        data-full-image="images/zumbahua post.jpg" /> </li>
+                                <li data-thumb=""> <img src="images/zumbahua post 2.jpg" alt=""
+                                        data-full-image="images/zumbahua post 22.jpg" /> </li>
+                                <li data-thumb=""> <img src="images/quilotoa3.jpg" alt=""
+                                        data-full-image="images/quilotoa3.jpg" /> </li>
+                                <li data-thumb=""><img src="images/shalala post.jpg" alt=""
+                                        data-full-image="images/shalala post.jpg" /> </li>
+
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="home-slider-thumbs">
+                        <div class="flexslider" id="home-slider-thumbs">
+                            <ul class="slides">
+                                <li data-thumb=""> <a href="#"><img src="images/zumbahua post 1.jpg" alt="" /></a> </li>
+                                <li data-thumb=""> <a href="#"><img src="images/zumbahua post.jpg" alt="" /></a> </li>
+                                <li data-thumb=""> <a href="#"><img src="images/zumbahua post 2.jpg" alt="" /></a> </li>
+                                <li data-thumb=""> <a href="#"><img src="images/quilota4.jpg" alt="" /></a> </li>
+                                <li data-thumb=""> <a href="#"><img src="images/quilota4.jpg" alt="" /></a> </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="clearfix"></div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="contenedor-imagen">
+                    <div class=""><img class="imagen-expansible" src="images/mapa zumbahua.jpg" alt="" id="imagen">
+                    </div>
+                </div>
+
+                <div class="contenedor-imagen2" style="margin-top: 60px;">
+                    <div class="video-box">
+                        <div class="video">
+                            <video width="800" autoplay muted id="miVideo2">
+                                <source src="videos/clima1.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-xs-12">
+        </div>
+
+    </section>
+
+    <!-- BANNER-->
+    <section class="content" id="zumbahua">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <img src="images/que hacer.jpg" alt="Que hacer en Zumbahua" class="imagen-con-hover">
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 left-content padding-left-none">
                 <div class="video-box">
                     <div class="video">
-                        <video width="800" controls autoplay>
-                            <source src="videos/quilotoa.mp4" type="video/mp4">
+                        <video width="800" autoplay muted id="miVideo3">
+                            <source src="videos/PRECIOS Y HORARIOS.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!--container ends-->
-        <h3 style="margin-left: 20px;">Servicios</h3>
-    </section>
-    <!--content ends-->
-
-    <section class="content" style="margin-top: 40px;">
-        <div class="row">
-
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <img class="img-responsive" src="images/botes.jpg" alt="">
-                <h4><a href="#" style="margin-top: 10px;">BOTES</a></h4>
-                <p class="margin-bottom-none">
-                    Los botes en Quilotoa son una opción para disfrutar de la laguna que se forma en el cráter del
-                    volcán. Se pueden alquilar botes o kayaks en la orilla y navegar por las aguas turquesas que cambian
-                    de color según la luz. Es una experiencia única y divertida que se puede combinar con el senderismo
-                    o el ciclismo.</p>
+                <div class="contenedor-imagen">
+                    <div class=""><img class="imagen-expansible" src="images/mapa zumbahua.jpg" alt="" id="imagen2">
+                    </div>
+                </div>
+                <div class="iframe-container" style="margin-top: 40px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15957.478000663554!2d-78.9143658661119!3d-0.8594118306834903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d4ecf2f2a74419%3A0x92c280f1f5d7614c!2sLaguna%20de%20Quilotoa!5e0!3m2!1ses!2sec!4v1696339455842!5m2!1ses!2sec"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <img class="img-responsive" src="images/artesania.jpg" alt="">
-                <h4><a href="#" style="margin-top: 10px;">ARTESANÍAS</a></h4>
-                <p class="margin-bottom-none">
-                    La artesanía en el Quilotoa es una expresión de la identidad y el talento de los comuneros que viven
-                    cerca de la laguna. Se destacan las prendas de lana, las máscaras de Tigua y los textiles, que se
-                    venden en locales a los visitantes. Estas artesanías son una forma de preservar y difundir la
-                    cultura local.</p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <img class="img-responsive" src="images/gastronomia.jpg" alt="">
-                <h4><a href="#" style="margin-top: 10px;">ALOJAMIENTO</a></h4>
-                <p class="margin-bottom-none">
-                    La gastronomía en Quilotoa es típica de la región andina, con platos elaborados con productos
-                    locales como el cuy, el conejo, el choclo, la papa y las frutas. Se pueden degustar platos como el
-                    cuy y conejo asado, las habas con choclo, el locro de papa y los zumos frutales. También hay
-                    opciones de café, bar y helados con fruta.</p>
-            </div>
-        </div>
-
-    </section>
-
-    <!--AQUI VA EL BANNER-->
-    <section class="content" style="margin-top: 40px;">
-        <div class="row">
-            <div class="col-lg-12 col-md-6 col-sm-4">
-                <img src="images/baner costos.jpg" alt="">
-            </div>
-
         </div>
     </section>
 
@@ -293,8 +350,11 @@
 <script>
     $(document).ready(function () {
         var video = $('#miVideo')[0]; // Obtén el elemento de video
+        var video2 = $('#miVideo2')[0]; // Obtén el elemento de video
+        var video3 = $('#miVideo3')[0]; // Obtén el elemento de video
         video.loop = true; // Habilita la reproducción en bucle
-        video.muted = true; // Silencia el video (opcional)
+        video2.loop = true; // Habilita la reproducción en bucle
+        video3.loop = true; // Habilita la reproducción en bucle
 
         // Agrega un evento "ended" para reiniciar el video
         video.addEventListener('ended', function () {
@@ -302,7 +362,33 @@
             this.play(); // Inicia la reproducción nuevamente
         });
 
+        video2.addEventListener('ended', function () {
+            this.currentTime = 0; // Reinicia al inicio
+            this.play(); // Inicia la reproducción nuevamente
+        });
+        video3.addEventListener('ended', function () {
+            this.currentTime = 0; // Reinicia al inicio
+            this.play(); // Inicia la reproducción nuevamente
+        });
+
         // Inicia la reproducción del video
         video.play();
+        video2.play();
+        video3.play();
+    });
+
+    // Obtén la imagen por su ID
+    var imagen = document.getElementById('imagen');
+    var imagen2 = document.getElementById('imagen2');
+
+    // Agrega un event listener para el clic
+    imagen.addEventListener('click', function () {
+        // Toggle (agrega o quita) la clase 'active' para cambiar el tamaño
+        this.classList.toggle('active');
+    });
+
+    imagen2.addEventListener('click', function () {
+        // Toggle (agrega o quita) la clase 'active' para cambiar el tamaño
+        this.classList.toggle('active');
     });
 </script>
