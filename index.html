@@ -64,28 +64,6 @@
             z-index: 999;
         }
 
-        /* Estilo inicial de la imagen */
-        .imagen-expansible2 {
-            max-width: 100%;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        /* Estilo cuando la imagen está agrandada */
-        .imagen-expansible2.active {
-            width: 100vw;
-            height: 100vh;
-            object-fit: contain;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            z-index: 999;
-        }
-
-
         /* Estilo de la imagen con hover solo en pantallas pequeñas (col-xs-12) */
         @media (max-width: 576px) {
             .col-xs-12:hover .imagen-con-hover {
@@ -483,7 +461,7 @@
                 </div>
 
                 <div class="contenedor-imagen2" style="margin-top: 60px;">
-                    <div class=""><img class="imagen-expansible2" src="images/mapa atractivos.jpg" alt="" id="imagen2">
+                    <div class=""><img class="imagen-expansible" src="images/mapa atractivos.jpg" alt="" id="imagen2">
                     </div>
                 </div>
             </div>
@@ -604,7 +582,6 @@
         });
     });
 
-    var imagen = document.getElementById('imagen');
 
     // Obtén la imagen por su ID
     var imagen = document.getElementById('imagen');
