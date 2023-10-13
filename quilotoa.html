@@ -91,6 +91,30 @@
             width: 100%;
             height: 100%;
         }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .imagenE {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            /* Agregar margen alrededor de las imágenes */
+            max-height: 150px;
+            /* Reducir el tamaño máximo de las imágenes */
+        }
+
+        /* Estilo de la imagen con hover solo en pantallas pequeñas (col-xs-12) */
+        @media (max-width: 576px) {
+            .col-xs-12:hover .imagen-con-hover {
+                transform: scale(1.2);
+                /* Efecto de escala en hover */
+            }
+        }
     </style>
 </head>
 
@@ -123,7 +147,8 @@
                                 data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle
                                     navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                                 <span class="icon-bar"></span> </button>
-                            <img src="images/logo2.png" alt="" width="150" style="margin-top: 21px;">
+                            <a href="index.html"><img src="images/logo2.png" alt="" width="150"
+                                    style="margin-top: 21px;"></a>
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -238,7 +263,7 @@
     <section class="content" id="zumbahua">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <img src="images/lagoplayita1.jpg" alt="Que hacer en Zumbahua" class="imagen-con-hover">
+                <img src="images/lagoplayita1.jpg" alt="Que hacer en Zumbahua" class="">
             </div>
         </div>
     </section>
@@ -272,7 +297,7 @@
     <section class="content">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <img src="images/hostaldestacado.jpg" alt="Que hacer en Zumbahua" class="imagen-con-hover">
+                <img src="images/hostaldestacado.jpg" alt="Que hacer en Zumbahua" class="">
             </div>
         </div>
     </section>
@@ -285,8 +310,9 @@
                         <div class="card">
                             <div class="face front"><img class="img-responsive" src="images/chukirawa.jpg"></div>
                             <div class="face back">
-                                <a href="quilotoa.html"><img class="img-responsive" src="images/chukirawa.jpg"
-                                        class="fancybox"></a>
+                                <a target="_blank"
+                                    href="https://www.booking.com/hotel/ec/hostal-chukirawa.es.html?aid=311839&label=hostal-chukirawa-xwLkJlQnoVTxkFMl4LQ3FgS388758435966%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1212306956073%3Alp9069556%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ybz4KBg0DTFCp_luKAHRTJg&sid=dab7cc29b967bf0e871f603044274ec9&dest_id=900051383;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1697139324;srpvid=878389ae7952017f;type=total;ucfs=1&#hotelTmpl"><img
+                                        class="img-responsive" src="images/chukirawa.jpg" class="fancybox"></a>
                             </div>
                         </div>
                     </div>
@@ -297,7 +323,9 @@
                         <div class="card">
                             <div class="face front"><img class="img-responsive" src="images/alpa.jpg" alt=""></div>
                             <div class="face back">
-                                <a href="#"><img class="img-responsive" src="images/alpa.jpg" class="fancybox"></a>
+                                <a target="_blank"
+                                    href="https://www.booking.com/hotel/ec/hostal-cabanas-quilotoa.es.html?aid=311839&label=hostal-chukirawa-xwLkJlQnoVTxkFMl4LQ3FgS388758435966%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1212306956073%3Alp9069556%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ybz4KBg0DTFCp_luKAHRTJg&sid=dab7cc29b967bf0e871f603044274ec9&dest_id=900051383;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=2;hpos=2;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1697139512;srpvid=878389ae7952017f;type=total;ucfs=1&#hotelTmpl"><img
+                                        class="img-responsive" src="images/alpa.jpg" class="fancybox"></a>
                             </div>
                         </div>
                     </div>
@@ -326,46 +354,45 @@
     <section class="content">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <img src="images/texthostales.jpg" alt="Que hacer en Zumbahua" class="imagen-con-hover">
+                <img src="images/texthostales.jpg" alt="Que hacer en Zumbahua" class="">
             </div>
         </div>
     </section>
     <section class="content">
         <div class="row">
-            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12 xs-padding-left-none xs-padding-right-none testimonials scroll_effect fadeInUp"
-                data-wow-delay=".5s">
-                <h3 class=""></h3>
+            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12 testimonials scroll_effect fadeInUp">
                 <div class="testimonial">
                     <ul class="testimonial_slider">
                         <li>
                             <blockquote class="style1"><span style="margin-left: 50px;">
-                                Con ganas de volver! Acampamos en la laguna y fue una experiencia excepcional. Fuimos en bus y después tuvimos que andar un poco, merece la pena :)</span> <strong span style="margin-left: 50px;">RUBIN 305
-                                    - Madrid, España</strong> </blockquote>
+                                    Con ganas de volver! Acampamos en la laguna y fue una experiencia excepcional.
+                                    Fuimos en bus y después tuvimos que andar un poco, merece la pena :)</span>
+                                <strong>RUBIN 305
+                                    - Madrid, España</strong>
+                            </blockquote>
                         </li>
                         <li>
-                            <blockquote class="style1"><span style="margin-left: 50px;">Laguna increíblemente preciosa en el cráter de un volcán. Para llegar desde Quito nos demoramos 2:30hrs aprox, en carro.</span> <strong span style="margin-left: 50px;">LUISARTURI
+                            <blockquote class="style1"><span style="margin-left: 50px;">Laguna increíblemente preciosa
+                                    en el cráter de un volcán. Para llegar desde Quito nos demoramos 2:30hrs aprox, en
+                                    carro.</span> <strong>LUISARTURI
                                     -Mexico, Mexico</strong> </blockquote>
                         </li>
                         <li>
-                            <blockquote class="style1"><span style="margin-left: 50px;">Un lugar que vale la pena conocer. Ver está inmensidad de Laguna y saber que está entre las 10 o 15 mejores del mundo, realmente te hace confirmar que si lo vale.</span> <strong span style="margin-left: 50px;">ARTURO205
+                            <blockquote class="style1"><span style="margin-left: 50px;">Un lugar que vale la pena
+                                    conocer. Ver está inmensidad de Laguna y saber que está entre las 10 o 15 mejores
+                                    del mundo, realmente te hace confirmar que si lo vale.</span> <strong>ARTURO205
                                     - Lima, Peru</strong> </blockquote>
                         </li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
-                <img src="images/experiencia1.jpg" alt="Que hacer en Zumbahua" class="imagen-con-hover">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
-                <img src="images/experiencia2.jpg" alt="Que hacer en Zumbahua" class="imagen-con-hover">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
-                <img src="images/experiencia3.jpg" alt="Que hacer en Zumbahua" class="imagen-con-hover">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12 container2">
+                <img src="images/experiencia1.jpg" alt="Que hacer en Zumbahua" class="imagenE">
+                <img src="images/experiencia2.jpg" alt="Que hacer en Zumbahua" class="imagenE">
+                <img src="images/experiencia3.jpg" alt="Que hacer en Zumbahua" class="imagenE">
             </div>
         </div>
     </section>
@@ -378,10 +405,40 @@
         </div>
     </section>
 
-    <section class="content">
+    <section class="content" style="margin-top: 40px;">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="contenedor-imagen">
+                    <div class=""><img class="imagen-expansible" src="images/horariotrans.jpg" alt="" id="imagen3">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="flip horizontal">
+                    <div class="card">
+                        <div class="face front"><img class="img-responsive" src="images/busquedatransporte.jpg"></div>
+                        <div class="face back">
+                            <a target="_blank" href="https://www.rome2rio.com/es/s/Quito/Zumbahua-Ecuador"><img
+                                    class="img-responsive" src="images/busquedatransporte.jpg" class="fancybox"></a>
+                        </div>
+                    </div>
+                </div>
+                <h4><a href="quilotoa.html">LAGUNA QUILOTOA</a></h4>
+            </div>
+        </div>
+
+        <section class="content">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
+                    <img src="images/gastrointro.jpg" alt="Gastronomía" class="imagen-con-hover">
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
             <div class="featured-service clearfix padding-bottom-40 margin-top-30">
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 scroll_effect fadeInUp"> 
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 scroll_effect fadeInUp">
                         <div class="featured">
                             <img src="images/habas.jpg" alt="Que hacer en Zumbahua" class="imagen-con-hover">
                         </div>
@@ -403,83 +460,84 @@
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
 
-    <!--Inicio pie de página-->
-    <footer class="design_2" style="margin-top: 40px;">
-        <div class="container">
-            <div class="row">
-                <div
-                    class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-left-none md-padding-left-none sm-padding-left-15 xs-padding-left-15">
-                    <h4>Noticias</h4>
-                    <p>Suscribete a nuestro sitio web para recibir noticias.</p>
-                    <form method="post" action="#" class="form_contact">
-                        <input type="text" value="" name="MERGE0" placeholder="Email Address">
-                        <input type="button" value="Subscribe" class="md-button">
-                        <input type="hidden" name="u" value="">
-                        <input type="hidden" name="id" value="">
-                    </form>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                </div>
-                <div
-                    class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-right-none md-padding-right-none sm-padding-right-15 xs-padding-right-15">
-                    <h4>Contáctanos</h4>
-                    <div class="footer-contact">
-                        <ul>
-                            <li><i class="fa fa-map-marker"></i> <strong>Dirección:</strong> Parroquia Zumbahua – Zona
-                                Centro</li>
-                            <li><i class="fa fa-phone"></i> <strong>Teléfono:</strong>032672-041</li>
-                            <li><i class="fa fa-envelope"></i> <strong>Correo:</strong><a href="#">gadprz
-                                    914@hotmail.com</a></li>
-                        </ul>
+        <!--Inicio pie de página-->
+        <footer class="design_2" style="margin-top: 40px;">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-left-none md-padding-left-none sm-padding-left-15 xs-padding-left-15">
+                        <h4>Noticias</h4>
+                        <p>Suscribete a nuestro sitio web para recibir noticias.</p>
+                        <form method="post" action="#" class="form_contact">
+                            <input type="text" value="" name="MERGE0" placeholder="Email Address">
+                            <input type="button" value="Subscribe" class="md-button">
+                            <input type="hidden" name="u" value="">
+                            <input type="hidden" name="id" value="">
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-right-none md-padding-right-none sm-padding-right-15 xs-padding-right-15">
+                        <h4>Contáctanos</h4>
+                        <div class="footer-contact">
+                            <ul>
+                                <li><i class="fa fa-map-marker"></i> <strong>Dirección:</strong> Parroquia Zumbahua –
+                                    Zona
+                                    Centro</li>
+                                <li><i class="fa fa-phone"></i> <strong>Teléfono:</strong>032672-041</li>
+                                <li><i class="fa fa-envelope"></i> <strong>Correo:</strong><a href="#">gadprz
+                                        914@hotmail.com</a></li>
+                            </ul>
 
-                        <i class="fa fa-location-arrow back_icon"></i>
+                            <i class="fa fa-location-arrow back_icon"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <div class="clearfix"></div>
-    <section class="copyright-wrap padding-bottom-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div
-                        class="logo-footer margin-bottom-10 md-margin-bottom-10 sm-margin-bottom-10 xs-margin-bottom-10">
-                        <a href="index.html"><img src="images/logo2.png" alt="" width="200" height="350">
-                    </div></a>
-                    <p>Copyright &copy; 2023 Stalyn Guanoluisa. Todos los derechos reservados.</p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-top: 20px;">
-                    <a href="#">
-                        <image src="images/face.png" width="50" height="90" />
-                    </a>
-                    <a href="#">
-                        <image src="images/what.png" width="50" height="90" />
-                    </a>
-                    <a href="#">
-                        <image src="images/insta.png" width="50" height="90" />
-                    </a>
+        <div class="clearfix"></div>
+        <section class="copyright-wrap padding-bottom-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div
+                            class="logo-footer margin-bottom-10 md-margin-bottom-10 sm-margin-bottom-10 xs-margin-bottom-10">
+                            <a href="index.html"><img src="images/logo2.png" alt="" width="200" height="350"></a>
+                        </div>
+                        <p>Copyright &copy; 2023 Stalyn Guanoluisa. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-top: 20px;">
+                        <a href="#">
+                            <image src="images/face.png" width="50" height="90" />
+                        </a>
+                        <a href="#">
+                            <image src="images/what.png" width="50" height="90" />
+                        </a>
+                        <a href="#">
+                            <image src="images/insta.png" width="50" height="90" />
+                        </a>
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <div class="back_to_top"> <img src="images/arrow-up.png" alt="scroll up" /> </div>
-    <!--Archivos Bootstrap y JavaScript -->
-    <script src="js/retina.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax.js"></script>
-    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
-    <script src="js/main.js"></script>
-    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script defer src="js/jquery.flexslider.js"></script>
-    <script src="js/jquery.bxslider.js" type="text/javascript"></script>
+        </section>
+        <div class="back_to_top"> <img src="images/arrow-up.png" alt="scroll up" /> </div>
+        <!--Archivos Bootstrap y JavaScript -->
+        <script src="js/retina.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script defer src="js/jquery.flexslider.js"></script>
+        <script src="js/jquery.bxslider.js" type="text/javascript"></script>
 
-    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.js"></script>
 </body>
 
 </html>
@@ -516,6 +574,7 @@
     // Obtén la imagen por su ID
     var imagen = document.getElementById('imagen');
     var imagen2 = document.getElementById('imagen2');
+    var imagen3 = document.getElementById('imagen3');
 
     // Agrega un event listener para el clic
     imagen.addEventListener('click', function () {
@@ -524,6 +583,11 @@
     });
 
     imagen2.addEventListener('click', function () {
+        // Toggle (agrega o quita) la clase 'active' para cambiar el tamaño
+        this.classList.toggle('active');
+    });
+
+    imagen3.addEventListener('click', function () {
         // Toggle (agrega o quita) la clase 'active' para cambiar el tamaño
         this.classList.toggle('active');
     });
